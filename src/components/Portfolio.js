@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import '../assets/css/style.css'
+import metatronPic from  '../assets/images/metatrons-cube.png'
+import refactorPic from '../assets/images/Screenshot1.jpg'
+import snarfPic from  '../assets/images/snarf.jpg'
+import stockScanner from '../assets/images/Stock-Scanner.jpg'
+import weatherPic from '../assets/images/WeatherPic.png'
+
 export default class Porfolio extends Component {
   render() {
   
     return (
 
-<section>
+<section class="container"   id="main-Section">
 <section class="d-flex justify-content-around ml-4">
 
   <div class="shape d-flex flex-column justify-content-center align-items-center">
@@ -68,7 +74,7 @@ export default class Porfolio extends Component {
                           
           <div class="bg-image hover zoom">
           <a href="https://dkallen117.github.io/StockScanner/" target="_blank" rel="noreferrer">
-          <img class="card-img-top img-fluid" id="stock-Scanner-Photo" src="../assets/images/Stock-Scanner.jpg" alt="Stock Scanner"></img>
+          <img class="card-img-top img-fluid" id="stock-Scanner-Photo" src = {stockScanner} alt="Stock Scanner"></img>
           </a>     
           </div>
           <div class="mask rgba-white-slight"></div>
@@ -87,7 +93,7 @@ export default class Porfolio extends Component {
           
         </div>
             
-      </div>
+      
 
 
       <div class="col-md-4 col-sm-12 mb-4">
@@ -97,7 +103,7 @@ export default class Porfolio extends Component {
           
           <div class="bg-image hover zoom">
           <a href="https://prezi.com/dwii7bnwk3rz/team-everybody-loves-snarf/" target="_blank" rel="noreferrer">
-          <img class="card-img-top" src="../assets/images/snarf.jpg"
+          <img class="card-img-top" src = {snarfPic}
                alt="Snarf">
           </img>
           <div class="mask rgba-white-slight"></div>
@@ -116,7 +122,7 @@ export default class Porfolio extends Component {
         </div>
             
        </div>
-
+              </div>
        <div class="col-md-4 col-sm-12 mb-4">
              
       
@@ -124,7 +130,7 @@ export default class Porfolio extends Component {
           
          <div class="bg-image hover zoom">
           <a href="https://www.youtube.com/watch?v=WM8Mky99coE" target="_blank" rel="noreferrer">
-          <img class="card-img-top" id="meta-Cube-Photo" src="../assets/images/metatrons-cube.png" alt="Metatrons Cube">
+          <img class="card-img-top" id="meta-Cube-Photo" src = {metatronPic} alt="Metatrons Cube">
               
          </img>
          <div class="mask rgba-white-slight"></div>
@@ -142,14 +148,14 @@ export default class Porfolio extends Component {
         </div>
             
        </div>
-
+       </div>
        <div class="col-md-4 col-sm-12 mb-4" id="weather-Card">
              
       
          <div class="card animated fadeInUp text-center">
           
           <div class="bg-image hover zoom">
-           <img class="card-img-top img-fluid" id="code-Refractor-Photo" src="../assets/images/WeatherPic.png" alt="Weather"></img>
+           <img class="card-img-top img-fluid" id="code-Refractor-Photo" src = {weatherPic} alt="Weather"></img>
                 
           </div>
           <a href="#!">
@@ -180,7 +186,7 @@ export default class Porfolio extends Component {
           <div class="card animated fadeInUp text-center">
 
            <div class="bg-image hover zoom">
-            <img class="card-img-top img-fluid" id="code-Refractor-Photo" src="../../assets/images/Screenshot1.jpg" alt="Code Refractor"></img>
+            <img class="card-img-top img-fluid" id="code-Refractor-Photo" src = {refactorPic} alt="Code Refractor"></img>
                  
            </div>
            <a href="#!">
@@ -203,8 +209,8 @@ export default class Porfolio extends Component {
            
           </div>
           
-        </div>           
-   </div>
+          </div>       
+   
    </section>
         );
   }

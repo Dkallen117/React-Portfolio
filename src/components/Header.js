@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 import '../assets/css/style.css'
+import circuitVideo from '../assets/images/circuit-video.mp4'
+import resumePDF from '../assets/docs/Daniels-Web-Resume.pdf'
 export default class Header extends Component {
   render() {
  
     return (
-      <React.Fragment>
+      
   
 
-{<header>
+<header>
 
 
 <div class="row d-flex justify-content-center" id="top-Section">
 
-  <video playsinline autoplay muted loop id="bgvid">
-    <source src='../assets/images/circuit-video.mp4' type="video/mp4"></source>
+  <video playsinline autoPlay muted loop id="bgvid">
+    <source src={circuitVideo} type="video/mp4"></source>
   </video>
     
     <nav>
@@ -41,8 +43,9 @@ export default class Header extends Component {
         </li>
         <li class="nav-item mx-2">
           <a class="nav-link active light-blue" 
-          href="../assets/docs/Daniel's Game Design Resume.pdf"
+          href= {resumePDF}
           target="_blank"
+          rel="noreferrer"
           download="resume"
           data-mdb-toggle="tooltip"
           title="Resume">Resume</a>
@@ -52,9 +55,9 @@ export default class Header extends Component {
 
 </div>
 
-</header>}
+</header>
 
-      </React.Fragment>
+     
     );
   }
 }
