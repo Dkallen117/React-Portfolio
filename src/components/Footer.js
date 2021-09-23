@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import '../assets/css/style.css'
 export default class Footer extends Component {
   render() {
-   
-    return (
+   return (
  <footer class="row justify-content-center my-4 animated fadeInUp">
 
     <div class="col-12 col-sm-6 col-md-4">

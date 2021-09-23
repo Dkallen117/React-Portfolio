@@ -4,45 +4,51 @@ import circuitVideo from '../assets/images/circuit-video.mp4'
 import resumePDF from '../assets/docs/Daniels-Web-Resume.pdf'
 export default class Header extends Component {
   render() {
- 
-    return (
+return (
       
-  
-
 <header>
 
+<div className="row d-flex justify-content-center" id="top-Section">
 
-<div class="row d-flex justify-content-center" id="top-Section">
-
-  <video playsinline autoPlay muted loop id="bgvid">
+  <video playsInline autoPlay muted loop>
     <source src={circuitVideo} type="video/mp4"></source>
   </video>
     
     <nav>
       
-      <div class="wow fadeInLeft">
-        <h1 class="linear-wipe">Daniels Portfolio</h1>
+      <div className="wow fadeInLeft"
+           style={{
+           backgroundColor: 'black',
+           width: '100%',
+           height: '100px',
+           display: 'flex',
+           alignItems: 'center',
+           justifyContent: 'center',
+           }}>
+        
+        <h1 className="linear-wipe my-auto">Daniels Portfolio</h1>
+        
       </div>
      
-      <ul class="nav nav-pills animated fadeInRight">
-        <li class="nav-item mr-2">
-          <a class="nav-link active light-blue" 
+      <ul className="nav nav-pills animated fadeInRight mx-2 my-2">
+        <li className="nav-item mr-2">
+          <a className="nav-link active light-blue" 
           href="https://github.com/Dkallen117" 
           target="_blank" 
           rel="noreferrer"
           data-mdb-toggle="tooltip" 
           title="Github">GitHub</a>
         </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link active light-blue" 
+        <li className="nav-item mx-2">
+          <a className="nav-link active light-blue" 
           href="https://www.linkedin.com/in/danielkentonallen/"
           target="_blank"
           rel="noreferrer"
           data-mdb-toggle="tooltip"
           title="LinkedIn">LinkedIn</a>
         </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link active light-blue" 
+        <li className="nav-item mx-2">
+          <a className="nav-link active light-blue" 
           href= {resumePDF}
           target="_blank"
           rel="noreferrer"
@@ -51,13 +57,12 @@ export default class Header extends Component {
           title="Resume">Resume</a>
         </li>
       </ul>
+    
     </nav>
 
 </div>
 
-</header>
-
-     
+</header>   
     );
   }
 }
