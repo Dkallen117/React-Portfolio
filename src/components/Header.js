@@ -15,12 +15,13 @@ return (
   </video>
     
     <nav>
-      
+      <div className='mr-2'>
       <div className="wow fadeInLeft"
            style={{
            backgroundColor: 'black',
            width: '100%',
            height: '100px',
+           marginRight: '7px',
            display: 'flex',
            alignItems: 'center',
            justifyContent: 'center',
@@ -29,8 +30,8 @@ return (
         <h1 className="linear-wipe my-auto">Daniels Portfolio</h1>
         
       </div>
-     
-      <ul className="nav nav-pills animated fadeInRight mx-2 my-2">
+      </div>
+      <ul className="nav nav-pills animated fadeInRight mx-3 my-2">
         <li className="nav-item mr-2">
           <a className="nav-link active light-blue" 
           href="https://github.com/Dkallen117" 

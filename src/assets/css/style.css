@@ -17,9 +17,9 @@ video {
   top: 0;
   left: 0;
   width: 101%;
-  height: 85%;
+  height: 59%;
   min-width: 101%;
-  min-height: 85%; 
+  min-height: 59%; 
   z-index: -1;
   object-position: center;
   object-fit: cover;
@@ -194,7 +194,7 @@ video {
 #top-Section{
 
   font-family: 'Hind', sans-serif;
-  margin-top: 250px;
+  margin-top: 200px;
   margin-left: 10px;
 
 }
