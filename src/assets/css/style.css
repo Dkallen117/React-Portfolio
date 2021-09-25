@@ -1,15 +1,15 @@
+/* Global Selectors */
+
 html {
   height: 100%;
   width: 100%;
 }
 
 body {
-
   height: 100%;
   overflow-y: auto;
   width: 100%;
-  overflow-x: hidden !important;
-  
+  overflow-x: hidden !important; 
 }
 
 video {
@@ -18,6 +18,7 @@ video {
   left: 0;
   width: 101%;
   height: 59%;
+  border-bottom: 10px solid black;
   min-width: 101%;
   min-height: 59%; 
   z-index: -1;
@@ -27,15 +28,11 @@ video {
 
 /* Class Selectors */
 
-
 .card-body{
-
   width: 100%;
   height: 20vw;
   object-fit: cover;
-
 }
-
 .card-img-top {
   min-width: 100%;
   height: 25vw;
@@ -43,7 +40,6 @@ video {
 }
 
 .linear-wipe {
-  
   margin-top: 50px;
  
   background-image: linear-gradient(to right, #00F260, #f79d00, #e2e605, #64f38c);
@@ -56,7 +52,6 @@ video {
   
   animation: animatedText 5s infinite alternate-reverse;
 }
-
 @keyframes animatedText{
   to{
     background-position: 100%; 
@@ -131,26 +126,29 @@ video {
   height: 100%;
   position: absolute;
 }
-
-.progress.blue .progress-bar{
-  border-color: blue;
-  
+.progress.ninety .progress-bar{
+  border-color:rgb(0, 0, 255);; 
 }
-.progress.blue .progress-left .progress-bar{
+.progress.ninety .progress-left .progress-bar{
   animation: loading-2 1.5s linear forwards 1.8s;
 }
-
-.progress.green .progress-bar{
-  border-color: green;
+.progress.seventyFive .progress-bar{
+  border-color:  rgb(0, 63, 255) ;
 }
-.progress.green .progress-left .progress-bar{
+.progress.seventyFive .progress-left .progress-bar{
   animation: loading-3 1s linear forwards 1.8s;
 }
-.progress.yellow .progress-bar{
-  border-color: yellow;
+.progress.sixty .progress-bar{
+  border-color: rgb(0, 126, 255);
 }
-.progress.yellow .progress-left .progress-bar{
+.progress.sixty .progress-left .progress-bar{
   animation: loading-4 0.4s linear forwards 1.8s;
+}
+.progress.fifty .progress-bar{
+  border-color: rgb(0, 189, 255);
+}
+.progress.fifty .progress-left .progress-bar{
+  animation: loading-1;
 }
 
 .shape {
@@ -165,38 +163,29 @@ video {
 /* ID selectors */
 
 #main-Section{
-
   font-family: 'Monda', sans-serif;
-  margin-top: 400px;
-
+  margin-top: 200px;
 }
 
 #work-Title,
 #code-Card,
 #weather-Card{
-
-
   margin-left: auto;
   margin-right: auto;
-
 }
 
 #stock-Scanner-Photo,
 #code-Refractor-Photo{
-
   width: 100%;
   height: 25vw;
   object-fit: contain;
-
 }
 
 
 #top-Section{
-
   font-family: 'Hind', sans-serif;
   margin-top: 200px;
   margin-left: 10px;
-
 }
 
 
@@ -208,17 +197,6 @@ video {
 
 }  */
 
-
-/* @keyframes loading-1{
-  0%{
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-  }
-  100%{
-      -webkit-transform: rotate(180deg);
-      transform: rotate(180deg);
-  }
-} */
 @keyframes loading-1{
   0%{
       -webkit-transform: rotate(0deg);
@@ -231,10 +209,12 @@ video {
 }
 @keyframes loading-2{
   0%{
+    
       -webkit-transform: rotate(0deg);
       transform: rotate(0deg);
   }
   100%{
+    
       -webkit-transform: rotate(144deg);
       transform: rotate(144deg);
   }
@@ -259,16 +239,7 @@ video {
       transform: rotate(36deg);
   }
 }
-@keyframes loading-5{
-  0%{
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-  }
-  100%{
-      -webkit-transform: rotate(126deg);
-      transform: rotate(126deg);
-  }
-}
+
 @media only screen and (max-width: 990px){
   .progress{ margin-bottom: 20px; }
 }

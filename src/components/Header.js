@@ -18,7 +18,8 @@ return (
       <div className='mr-2'>
       <div className="wow fadeInLeft"
            style={{
-           backgroundColor: 'black',
+           backgroundColor:  '#00000099',
+           color:'#FFFFFF',
            width: '100%',
            height: '100px',
            marginRight: '7px',
