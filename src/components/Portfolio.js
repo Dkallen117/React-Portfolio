@@ -13,7 +13,12 @@ export default class Porfolio extends Component {
 
 <section className="container"   id="main-Section">
   
+<h1 className = "text-center my-5">About</h1>
+
+<h2  className ="text-center my-5"> Abilities and Interests </h2>
+
   <section className="d-flex justify-content-around ml-4">
+
 
     <div className="shape d-flex flex-column justify-content-center align-items-center wow fadeInUp">
     <i className="fas fa-database fa-2x"></i>
@@ -153,13 +158,13 @@ export default class Porfolio extends Component {
     </div> 
   </div> 
   
-  <h1 className="wow slideInLeft my-4 text-center" data-wow-offset="500" id="work-Title">Work</h1>
+  <h1 className="wow slideInLeft my-4 text-center" id="work-Title">Portfolio</h1>
           
     <div className="row row-cols-1 row-cols-md-2">
 
       <div className="col-md-4 col-sm-12 mb-4">
    
-        <div className="card animated fadeInUp text-center">
+        <div className="card wow fadeInUp text-center">
                           
           <div className="bg-image hover zoom">
           <a href="https://dkallen117.github.io/StockScanner/" target="_blank" rel="noreferrer">
@@ -186,7 +191,7 @@ export default class Porfolio extends Component {
           
       <div className="col-md-4 col-sm-12 mb-4">
    
-        <div className="card animated fadeInUp text-center">
+        <div className="card wow fadeInUp text-center">
           
           <div className="bg-image hover zoom">
           <a href="https://prezi.com/dwii7bnwk3rz/team-everybody-loves-snarf/" target="_blank" rel="noreferrer">
@@ -195,7 +200,7 @@ export default class Porfolio extends Component {
           </img>
           <div className="mask rgba-white-slight"></div>
           </a>
-              
+          </div>
           <div className="card-body">
       
            <h4 className="card-title">Video Game Studio Prezi Presentation</h4>
@@ -206,7 +211,7 @@ export default class Porfolio extends Component {
                 
            </div>
           
-        </div>
+        
             
        </div>
       
@@ -214,7 +219,7 @@ export default class Porfolio extends Component {
       
       <div className="col-md-4 col-sm-12 mb-4">
              
-        <div className="card animated fadeInUp text-center">
+        <div className="card wow fadeInUp text-center">
           
          <div className="bg-image hover zoom">
           <a href="https://www.youtube.com/watch?v=WM8Mky99coE" target="_blank" rel="noreferrer">
@@ -223,7 +228,7 @@ export default class Porfolio extends Component {
           </img>
           <div className="mask rgba-white-slight"></div>
           </a>
-              
+          </div>  
           <div className="card-body">
           
            <h4 className="card-title">Metatron's Cube YouTube Video</h4>
@@ -233,7 +238,7 @@ export default class Porfolio extends Component {
                   
           </div>
           
-        </div>
+        
             
        </div>
        
@@ -241,7 +246,7 @@ export default class Porfolio extends Component {
       
       <div className="col-md-4 col-sm-12 mb-4" id="weather-Card">
              
-         <div className="card animated fadeInUp text-center">
+         <div className="card wow fadeInUp text-center">
           
           <div className="bg-image hover zoom">
            <img className="card-img-top img-fluid" id="code-Refractor-Photo" src = {weatherPic} alt="Weather"></img>
@@ -271,7 +276,7 @@ export default class Porfolio extends Component {
 
         <div className="col-md-4 col-sm-12 mb-4"  id="code-Card">
                     
-          <div className="card animated fadeInUp text-center">
+          <div className="card wow fadeInUp text-center">
 
            <div className="bg-image hover zoom">
            <img className="card-img-top img-fluid" id="code-Refractor-Photo" src = {refactorPic} alt="Code Refractor"></img>
