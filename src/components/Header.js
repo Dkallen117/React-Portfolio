@@ -10,10 +10,11 @@ return (
 
 <div className="row d-flex justify-content-center" id="top-Section">
 
+
   <video playsInline autoPlay muted loop>
     <source src={circuitVideo} type="video/mp4"></source>
   </video>
-    
+ 
     <nav>
       <div className='mr-2'>
       <div className="wow fadeInLeft"

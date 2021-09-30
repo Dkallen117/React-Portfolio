@@ -7,18 +7,15 @@ import stockScanner from '../assets/images/Stock-Scanner.jpg'
 import weatherPic from '../assets/images/WeatherPic.png'
 
 export default class Porfolio extends Component {
-  render() {
-  
+  render() { 
     return (
 
 <section className="container"   id="main-Section">
-  
+ 
 <h1 className = "text-center my-5">About</h1>
-
+{/* Abilities and Interests */}
 <h2  className ="text-center my-5"> Abilities and Interests </h2>
-
-  <section className="d-flex justify-content-around ml-4">
-
+  <section className="d-flex justify-content-around ml-4" id="abilities-Interests">
 
     <div className="shape d-flex flex-column justify-content-center align-items-center wow fadeInUp">
     <i className="fas fa-database fa-2x"></i>
@@ -45,11 +42,9 @@ export default class Porfolio extends Component {
     </div>
   
   </section>
-
-  <div className = "container my-5">
-    
+{/* Skills */}
+  <div className = "container my-5"> 
     <h1 className = "text-center my-5 wow zoomIn"> Skill Set Knowledge </h1>
-
     <div className="row d-flex justify-content-around">
       
       <div className="col-md-3 col-sm-6 wow fadeInLeft">
@@ -159,11 +154,9 @@ export default class Porfolio extends Component {
   </div> 
   
   <h1 className="wow slideInLeft my-4 text-center" id="work-Title">Portfolio</h1>
-          
+       {/* Stock Scanner Card */}     
     <div className="row row-cols-1 row-cols-md-2">
-
-      <div className="col-md-4 col-sm-12 mb-4">
-   
+      <div className="col-md-4 col-sm-12 mb-4">  
         <div className="card wow fadeInUp text-center">
                           
           <div className="bg-image hover zoom">
@@ -184,15 +177,12 @@ export default class Porfolio extends Component {
             </a>
                 
           </div>
-
-          </div>
+        </div>        
+      </div>
           
-        </div>
-          
-      <div className="col-md-4 col-sm-12 mb-4">
-   
-        <div className="card wow fadeInUp text-center">
-          
+       {/* Snarf Card */}
+      <div className="col-md-4 col-sm-12 mb-4"> 
+        <div className="card wow fadeInUp text-center">         
           <div className="bg-image hover zoom">
           <a href="https://prezi.com/dwii7bnwk3rz/team-everybody-loves-snarf/" target="_blank" rel="noreferrer">
           <img className="card-img-top" src = {snarfPic}
@@ -209,16 +199,12 @@ export default class Porfolio extends Component {
             for a fictional video game studio! (Image Credit: Jason Velazquez // 
             <a href="https://dribbble.com/shots/1453837-Snarf-minimal-vector-drawing-ThunderCats" target="_blank" rel="noreferrer">Image Link</a>)</p>
                 
-           </div>
-          
-        
-            
-       </div>
-      
+           </div>              
+       </div>  
       </div>
       
-      <div className="col-md-4 col-sm-12 mb-4">
-             
+        {/* Metatron Card */}
+      <div className="col-md-4 col-sm-12 mb-4">            
         <div className="card wow fadeInUp text-center">
           
          <div className="bg-image hover zoom">
@@ -236,30 +222,22 @@ export default class Porfolio extends Component {
             <p className="card-text">Click the image to be taken to a YouTube video of my teams fictional video game
                                  pitch to a fictional game studio.</p>
                   
-          </div>
-          
-        
-            
-       </div>
-       
+          </div>           
+       </div>     
       </div>
       
-      <div className="col-md-4 col-sm-12 mb-4" id="weather-Card">
-             
+       {/* Weather Card */}
+      <div className="col-md-4 col-sm-12 mb-4" id="weather-Card">        
          <div className="card wow fadeInUp text-center">
           
           <div className="bg-image hover zoom">
-           <img className="card-img-top img-fluid" id="code-Refractor-Photo" src = {weatherPic} alt="Weather"></img>
-                
+           <img className="card-img-top img-fluid" id="code-Refractor-Photo" src = {weatherPic} alt="Weather"></img>   
           </div>
           <a href="#!">
           <div className="mask rgba-white-slight"></div>
-          </a>
-              
+          </a>  
             <div className="card-body">
-
-             <h4 className="card-title">Weather Dashboard</h4>
-                  
+             <h4 className="card-title">Weather Dashboard</h4>                 
                <p className="card-text">Click the image to be taken to a daily and 5-day forecast Weather Dashboard 
                                     application.
                </p>
@@ -269,15 +247,12 @@ export default class Porfolio extends Component {
                </a>
           
             </div>
-          
            </div>
-           
         </div>
 
-        <div className="col-md-4 col-sm-12 mb-4"  id="code-Card">
-                    
+        {/* Code Refactor Card */}
+        <div className="col-md-4 col-sm-12 mb-4"  id="code-Card">                   
           <div className="card wow fadeInUp text-center">
-
            <div className="bg-image hover zoom">
            <img className="card-img-top img-fluid" id="code-Refractor-Photo" src = {refactorPic} alt="Code Refractor"></img>
            </div>
@@ -295,14 +270,10 @@ export default class Porfolio extends Component {
                <button type="button" className="btn blue-gradient btn-lg">GitHub Respository</button>
                </a>
           
-            </div>
-          
-           </div>
-           
-          </div>
-          
-      </div>       
-   
+            </div>          
+           </div>         
+          </div>         
+      </div>        
    </section>
         );
   }
