@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import '../assets/css/style.css'
+import { MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 export default class NavBar extends Component {
   render() {
    return (
+<MDBContainer fluid className="px-0">  
+
+ 
 <nav className="navbar navbar-expand-lg navbar-dark bg-dark" id="nav-Bar">
 
-  <div className="container-fluid">
+
 
     <button
       className="navbar-toggler"
@@ -37,14 +41,12 @@ export default class NavBar extends Component {
       </ul>
     
     </div>
-  
 
-    
-   
-  
-  </div>
  
 </nav>
+
+
+</MDBContainer>   
   );
 }
 }

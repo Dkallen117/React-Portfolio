@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 import '../assets/css/style.css'
 import circuitVideo from '../assets/images/circuit-video.mp4'
 import resumePDF from '../assets/docs/Daniels-Web-Resume.pdf'
+import { MDBCol, MDBContainer, MDBRow } from 'mdb-react-ui-kit';
 export default class Header extends Component {
   render() {
 return (
-      
+ 
+<MDBContainer fluid>
+
 <header>
 
 <div className="row d-flex justify-content-center" id="top-Section">
@@ -17,6 +20,7 @@ return (
  
     <nav>
       <div className='mr-2'>
+      
       <div className="wow fadeInLeft"
            style={{
            backgroundColor:  '#00000099',
@@ -32,6 +36,7 @@ return (
         <h1 className="linear-wipe my-auto">Daniels Portfolio</h1>
         
       </div>
+      
       </div>
       <ul className="nav nav-pills animated fadeInRight mx-3 my-2">
         <li className="nav-item mr-2">
@@ -65,7 +70,9 @@ return (
 
 </div>
 
-</header>   
+</header>  
+
+</MDBContainer>  
     );
   }
 }
