@@ -3,7 +3,7 @@
 <p align="center">
     <img src="https://img.shields.io/github/repo-size/Dkallen117/React-Portfolio" />
     <img src="https://img.shields.io/github/languages/top/Dkallen117/React-Portfolio"  />
-    <img src="https://img.shields.io/github/issues/Dkallen117/React-Portfoliot" />
+    <img src="https://img.shields.io/github/issues/Dkallen117/React-Portfolio" />
     <img src="https://img.shields.io/github/last-commit/Dkallen117/React-Portfolio" >
 </p>
   
