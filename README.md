@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# React-Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+    <img src="https://img.shields.io/github/repo-size/Dkallen117/React-Portfolio" />
+    <img src="https://img.shields.io/github/languages/top/Dkallen117/React-Portfolio"  />
+    <img src="https://img.shields.io/github/issues/Dkallen117/React-Portfoliot" />
+    <img src="https://img.shields.io/github/last-commit/Dkallen117/React-Portfolio" >
+</p>
+  
+<p align="center">
+    <img src="https://img.shields.io/badge/React-blue" />
+    <img src="https://img.shields.io/badge/MDBootstrap-red" />
+    <img src="https://img.shields.io/badge/Wowjs-orange"  />
+    <img src="https://img.shields.io/badge/JavaScript-lightgreen" />
+</p>
 
-## Available Scripts
+## Description 
 
-In the project directory, you can run:
+My portfolio in React format! React is one of the most popular JS libaries around, and with its easy to use API, converting my old portfolio was essential. Combining React, the MDBoostrap CSS library, and Wowjs for some fun animations, my live portfolio is here for you to view and get a taste of my work and design processes. This portfolio will continually be updated so come back soon for new additions!
 
-### `npm start`
+## Table of Contents 📖
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Technologies Used](#technologies-used-%EF%B8%8F)
+- [Installation](#installation-%EF%B8%8F)
+- [Usage Demo](#usage-demo)
+- [License](#license-)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Technologies Used 🖥️
 
-### `npm test`
+| Technology  | Link                                    |
+| ----------- | --------------------------------------- |
+| React       | https://reactjs.org/                    |
+| Wowjs       | https://wowjs.uk/                       |
+| MDBootstrap | https://mdbootstrap.com/                |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation ⚙️
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Download a copy of this repository
+2. Make sure you have React.js and npm installed
+    - Install necessary npm packages via `npm install`
+3. Navigate to the file location of the downloaded repository using the command line
+5. Enter `npm start` to start the application and it will automatically load in your browser
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Usage Demo
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[Deployed Application]()
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Screenshot:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## License ![GitHub](https://img.shields.io/badge/License%3A-MIT-green.svg)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT
