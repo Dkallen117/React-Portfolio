@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.109f01d6.chunk.css",
+    "main.js": "/React-Portfolio/static/js/main.ab8406b1.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.ab8406b1.chunk.js.map",
+    "runtime-main.js": "/React-Portfolio/static/js/runtime-main.24514994.js",
+    "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.24514994.js.map",
+    "static/js/2.45cf6d16.chunk.js": "/React-Portfolio/static/js/2.45cf6d16.chunk.js",
+    "static/js/2.45cf6d16.chunk.js.map": "/React-Portfolio/static/js/2.45cf6d16.chunk.js.map",
+    "index.html": "/React-Portfolio/index.html",
+    "static/css/main.109f01d6.chunk.css.map": "/React-Portfolio/static/css/main.109f01d6.chunk.css.map",
+    "static/js/2.45cf6d16.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.45cf6d16.chunk.js.LICENSE.txt",
+    "static/media/Daniels-Web-Resume.963747cf.pdf": "/React-Portfolio/static/media/Daniels-Web-Resume.963747cf.pdf",
+    "static/media/Screenshot1.dfdcc23a.jpg": "/React-Portfolio/static/media/Screenshot1.dfdcc23a.jpg",
+    "static/media/Stock-Scanner.dd82f85d.jpg": "/React-Portfolio/static/media/Stock-Scanner.dd82f85d.jpg",
+    "static/media/WeatherPic.02051492.png": "/React-Portfolio/static/media/WeatherPic.02051492.png",
+    "static/media/circuit-video.0e0dd44f.mp4": "/React-Portfolio/static/media/circuit-video.0e0dd44f.mp4",
+    "static/media/metatrons-cube.9566f292.png": "/React-Portfolio/static/media/metatrons-cube.9566f292.png",
+    "static/media/snarf.02df4620.jpg": "/React-Portfolio/static/media/snarf.02df4620.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.24514994.js",
+    "static/js/2.45cf6d16.chunk.js",
+    "static/css/main.109f01d6.chunk.css",
+    "static/js/main.ab8406b1.chunk.js"
+  ]
+}
