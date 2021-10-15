@@ -49,7 +49,6 @@ My portfolio in React format! React is one of the most popular JS libaries aroun
 
 [Deployed Application]()
 
-Screenshot:
 
 ## License ![GitHub](https://img.shields.io/badge/License%3A-MIT-green.svg)
 
