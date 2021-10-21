@@ -24,21 +24,29 @@ export default class Footer extends Component {
                     <textarea className="form-control" id="form4Example3" rows="4" required></textarea>
                     <label className="form-label" for="form4Example3">Message</label>
                     </div>
-
-                    <div className="form-check d-flex  mb-4">
-                      <input
-                        className="form-check-input me-2"
-                        type="checkbox"
-                        value=""
-                        id="form2Example3"
-                        checked
-                      />
-                      <label className="form-check-label" for="form2Example3">
-                      Send me a copy of this message
-                      </label>
-                    </div>
                     <button type="submit" className="btn btn-light btn-block mb-4">Send</button>
                   </form>  
+                  <div className="d-flex justify-content-around my-3">
+                  {/* GitHub */}
+                  <a href="https://github.com/Dkallen117" 
+                     target="_blank" 
+                     rel="noreferrer"
+                     data-mdb-toggle="tooltip" 
+                     title="Github">
+                  <i className="fab fa-github fa-3x"></i>
+                  </a>
+                  <a href="#top">
+                  <i className="fas fa-angle-double-up fa-3x"></i>
+                  </a>
+                  {/* LinkedIn */}
+                  <a href="https://www.linkedin.com/in/danielkentonallen/"
+                     target="_blank"
+                     rel="noreferrer"
+                     data-mdb-toggle="tooltip"
+                     title="LinkedIn">
+                  <i className="fab fa-linkedin fa-3x"></i>
+                  </a>
+                  </div>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../assets/css/style.css'
 import { MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
+import resumePDF from '../assets/docs/Daniels-Web-Resume.pdf'
 export default class NavBar extends Component {
   render() {
    return (
@@ -28,6 +29,14 @@ export default class NavBar extends Component {
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#contact">Contact</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link"  href= {resumePDF}
+          target="_blank"
+          rel="noreferrer"
+          download="resume"
+          data-mdb-toggle="tooltip"
+          title="Resume">Resume</a>
         </li>
       </ul>  
     </div>
