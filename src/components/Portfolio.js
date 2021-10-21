@@ -11,9 +11,9 @@ export default class Porfolio extends Component {
     return (
 
 <section className="container"   id="main-Section">
- 
-<h1 className = "text-center my-5">About</h1>
+
 {/* Abilities and Interests */}
+<h1 className = "text-center my-5">About</h1>
 <h2  className ="text-center my-5"> Abilities and Interests </h2>
   <section className="d-flex justify-content-around ml-4" id="abilities-Interests">
 

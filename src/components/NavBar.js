@@ -4,13 +4,9 @@ import { MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 export default class NavBar extends Component {
   render() {
    return (
-<MDBContainer fluid className="px-0">  
+<MDBContainer fluid className="px-0" id="nav-Bar">  
 
- 
-<nav className="navbar navbar-expand-lg navbar-dark bg-dark" id="nav-Bar">
-
-
-
+<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
     <button
       className="navbar-toggler"
       type="button"
@@ -22,12 +18,7 @@ export default class NavBar extends Component {
     >
       <i className="fas fa-bars"></i>
     </button>
-
-
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
- 
-      
-   
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
           <a className="nav-link" href="#main-Section">About</a>
@@ -38,14 +29,9 @@ export default class NavBar extends Component {
         <li className="nav-item">
           <a className="nav-link" href="#contact">Contact</a>
         </li>
-      </ul>
-    
+      </ul>  
     </div>
-
- 
 </nav>
-
-
 </MDBContainer>   
   );
 }

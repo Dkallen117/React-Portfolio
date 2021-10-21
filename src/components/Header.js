@@ -2,42 +2,37 @@ import React, { Component } from 'react';
 import '../assets/css/style.css'
 import circuitVideo from '../assets/images/circuit-video.mp4'
 import resumePDF from '../assets/docs/Daniels-Web-Resume.pdf'
-import { MDBCol, MDBContainer, MDBRow } from 'mdb-react-ui-kit';
+import { MDBContainer } from 'mdb-react-ui-kit';
 export default class Header extends Component {
   render() {
 return (
- 
 <MDBContainer fluid>
-
 <header>
-
-<div className="row d-flex justify-content-center" id="top-Section">
-
-
+<div className="row d-flex justify-content-center align-items-center" id="top-Section">
   <video playsInline autoPlay muted loop>
     <source src={circuitVideo} type="video/mp4"></source>
-  </video>
- 
+  </video> 
     <nav>
-      <div className='mr-2'>
-      
-      <div className="wow fadeInLeft"
+      <div className="wow fadeInLeft mr-2"
            style={{
            backgroundColor:  '#00000099',
            color:'#FFFFFF',
            width: '100%',
-           height: '100px',
            marginRight: '7px',
-           display: 'flex',
-           alignItems: 'center',
-           justifyContent: 'center',
+           display: 'flex-column',
+           borderRadius: '25px',
            }}>
         
-        <h1 className="linear-wipe my-auto">Daniels Portfolio</h1>
-        
-      </div>
-      
-      </div>
+        <h1 className="my-auto text-center" >Hello, I'm </h1><h1 className="linear-wipe my-auto text-center">Daniel Allen</h1>
+        <h2 className="my-auto text-center mx-2">A Web and Game Developer</h2>
+        <a  href="#main-Section">
+          <div className="btn-container">
+            <div className="flip-button mx-auto" btn-after="My Portfolio">
+              <p className="glow my-auto">Check Out</p>
+              </div>
+              </div>
+              </a>      
+          </div>
       <ul className="nav nav-pills animated fadeInRight mx-3 my-2">
         <li className="nav-item mr-2">
           <a className="nav-link active light-blue" 
@@ -64,14 +59,10 @@ return (
           data-mdb-toggle="tooltip"
           title="Resume">Resume</a>
         </li>
-      </ul>
-    
+      </ul>  
     </nav>
-
 </div>
-
 </header>  
-
 </MDBContainer>  
     );
   }
