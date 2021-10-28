@@ -1,27 +1,30 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.350b0ece.chunk.css",
-    "main.js": "/React-Portfolio/static/js/main.9dfa4516.chunk.js",
-    "main.js.map": "/React-Portfolio/static/js/main.9dfa4516.chunk.js.map",
+    "main.css": "/React-Portfolio/static/css/main.b0346cdc.chunk.css",
+    "main.js": "/React-Portfolio/static/js/main.0334785b.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.0334785b.chunk.js.map",
     "runtime-main.js": "/React-Portfolio/static/js/runtime-main.24514994.js",
     "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.24514994.js.map",
     "static/js/2.45cf6d16.chunk.js": "/React-Portfolio/static/js/2.45cf6d16.chunk.js",
     "static/js/2.45cf6d16.chunk.js.map": "/React-Portfolio/static/js/2.45cf6d16.chunk.js.map",
     "index.html": "/React-Portfolio/index.html",
-    "static/css/main.350b0ece.chunk.css.map": "/React-Portfolio/static/css/main.350b0ece.chunk.css.map",
+    "static/css/main.b0346cdc.chunk.css.map": "/React-Portfolio/static/css/main.b0346cdc.chunk.css.map",
     "static/js/2.45cf6d16.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.45cf6d16.chunk.js.LICENSE.txt",
-    "static/media/Daniels-Web-Resume.963747cf.pdf": "/React-Portfolio/static/media/Daniels-Web-Resume.963747cf.pdf",
+    "static/media/Daniels-Web-Game-Dev-Resume.0138710e.pdf": "/React-Portfolio/static/media/Daniels-Web-Game-Dev-Resume.0138710e.pdf",
     "static/media/Screenshot1.dfdcc23a.jpg": "/React-Portfolio/static/media/Screenshot1.dfdcc23a.jpg",
     "static/media/Stock-Scanner.dd82f85d.jpg": "/React-Portfolio/static/media/Stock-Scanner.dd82f85d.jpg",
     "static/media/WeatherPic.02051492.png": "/React-Portfolio/static/media/WeatherPic.02051492.png",
+    "static/media/bookSearch.916347a6.png": "/React-Portfolio/static/media/bookSearch.916347a6.png",
     "static/media/circuit-video.de487ac4.mp4": "/React-Portfolio/static/media/circuit-video.de487ac4.mp4",
+    "static/media/e-commerce.01c1821b.png": "/React-Portfolio/static/media/e-commerce.01c1821b.png",
     "static/media/metatrons-cube.9566f292.png": "/React-Portfolio/static/media/metatrons-cube.9566f292.png",
+    "static/media/rpg.a82a3a40.png": "/React-Portfolio/static/media/rpg.a82a3a40.png",
     "static/media/snarf.02df4620.jpg": "/React-Portfolio/static/media/snarf.02df4620.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.24514994.js",
     "static/js/2.45cf6d16.chunk.js",
-    "static/css/main.350b0ece.chunk.css",
-    "static/js/main.9dfa4516.chunk.js"
+    "static/css/main.b0346cdc.chunk.css",
+    "static/js/main.0334785b.chunk.js"
   ]
 }
