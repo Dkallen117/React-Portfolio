@@ -5,6 +5,9 @@ import refactorPic from '../assets/images/Screenshot1.jpg'
 import snarfPic from  '../assets/images/snarf.jpg'
 import stockScanner from '../assets/images/Stock-Scanner.jpg'
 import weatherPic from '../assets/images/WeatherPic.png'
+import ecommercePic from '../assets/images/e-commerce.png'
+import bookSearchPic from '../assets/images/bookSearch.png'
+import rpgPic from '../assets/images/rpg.png'
 
 export default class Porfolio extends Component {
   render() { 
@@ -157,8 +160,64 @@ export default class Porfolio extends Component {
   
   <h1 className="wow slideInLeft my-4 text-center" id="work-Title">Portfolio</h1>
   <hr className="wow slideInLeft mb-5" style={{borderWidth: '10px', backgroundColor:  '#00000099', color:'#FFFFFF',}}></hr>
-       {/* Stock Scanner Card */}          
+      
+      
+             
     <div className="card-group row row-cols-1 row-cols-md-2">
+
+    <div className="col-md-4 mb-4 my-5">  
+        <div className="card d-flex flex-column wow fadeInUp text-center">                     
+          <div className="bg-image hover zoom">
+          <a href="https://book-search-engine-mern-2021.herokuapp.com/" target="_blank" rel="noreferrer">
+          <img className="card-img-top img-fluid" src = {bookSearchPic} alt="RPG"></img>
+          </a>     
+          </div>
+          <div className="mask rgba-white-slight"></div>        
+           <h4 className="card-title">RPG Database</h4>               
+            <p className="card-text">Click the image to be taken to a refactored RESTful to a MERN-stack
+            based book search application. </p>  
+            <a href="https://github.com/Dkallen117/book-Search-Engine" target="_blank" rel="noreferrer">
+            <button type="button" className="btn blue-gradient btn-lg mb-5">GitHub Respository</button>
+            </a>
+        </div>        
+      </div> 
+
+
+    <div className="col-md-4 mb-4 my-5">  
+        <div className="card d-flex flex-column wow fadeInUp text-center">                     
+          <div className="bg-image hover zoom">
+          <a href="https://jefarth-rpg-database.herokuapp.com/" target="_blank" rel="noreferrer">
+          <img className="card-img-top img-fluid" src = {rpgPic} alt="RPG"></img>
+          </a>     
+          </div>
+          <div className="mask rgba-white-slight"></div>        
+           <h4 className="card-title">Book Search</h4>               
+            <p className="card-text">Click the image to be taken to experience my second team-based website
+            where users can create RPG style characters and compare them to previously created ones</p>  
+            <a href="https://github.com/Dkallen117/rpg-character-sheet" target="_blank" rel="noreferrer">
+            <button type="button" className="btn blue-gradient btn-lg mb-5">GitHub Respository</button>
+            </a>
+        </div>        
+      </div> 
+
+    <div className="col-md-4 mb-4 my-5">  
+        <div className="card d-flex flex-column wow fadeInUp text-center">                     
+          <div className="bg-image hover zoom">
+          <a href="https://drive.google.com/file/d/1L170PB6NC_hPIxG2VKxrctGLzShzYpn1/view" target="_blank" rel="noreferrer">
+          <img className="card-img-top img-fluid" src = {ecommercePic} alt="E-Commerce"></img>
+          </a>     
+          </div>
+          <div className="mask rgba-white-slight"></div>        
+           <h4 className="card-title">E-Commerce Backend</h4>               
+            <p className="card-text">Click the image to be taken to a video demonstration of how to GET, PUT, POST,
+            and DELETE products, tags, and categories in this e-commerce backend application</p>  
+            <a href="https://github.com/Dkallen117/e-commerce-backend" target="_blank" rel="noreferrer">
+            <button type="button" className="btn blue-gradient btn-lg mb-5">GitHub Respository</button>
+            </a>
+        </div>        
+      </div> 
+
+      {/* Stock Scanner Card */}   
       <div className="col-md-4 mb-4 my-5">  
         <div className="card d-flex flex-column wow fadeInUp text-center">                     
           <div className="bg-image hover zoom">

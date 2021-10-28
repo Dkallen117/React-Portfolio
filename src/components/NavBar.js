@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import '../assets/css/style.css'
-import { MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
-import resumePDF from '../assets/docs/Daniels-Web-Resume.pdf'
+import { MDBContainer } from 'mdb-react-ui-kit';
+import resumePDF from '../assets/docs/Daniels-Web-Game-Dev-Resume.pdf';
 export default class NavBar extends Component {
   render() {
    return (
 <MDBContainer fluid className="px-0" id="nav-Bar">  
 
 <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container-fluid">
     <button
       className="navbar-toggler"
       type="button"
@@ -39,6 +40,7 @@ export default class NavBar extends Component {
           title="Resume">Resume</a>
         </li>
       </ul>  
+    </div>
     </div>
 </nav>
 </MDBContainer>   
