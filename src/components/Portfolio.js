@@ -173,7 +173,7 @@ export default class Porfolio extends Component {
           </a>     
           </div>
           <div className="mask rgba-white-slight"></div>        
-           <h4 className="card-title">RPG Database</h4>               
+           <h4 className="card-title">Book Search</h4>               
             <p className="card-text">Click the image to be taken to a refactored RESTful to a MERN-stack
             based book search application. </p>  
             <a href="https://github.com/Dkallen117/book-Search-Engine" target="_blank" rel="noreferrer">
@@ -191,7 +191,7 @@ export default class Porfolio extends Component {
           </a>     
           </div>
           <div className="mask rgba-white-slight"></div>        
-           <h4 className="card-title">Book Search</h4>               
+           <h4 className="card-title">RPG Database</h4>               
             <p className="card-text">Click the image to be taken to experience my second team-based website
             where users can create RPG style characters and compare them to previously created ones</p>  
             <a href="https://github.com/Dkallen117/rpg-character-sheet" target="_blank" rel="noreferrer">

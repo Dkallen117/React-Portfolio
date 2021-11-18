@@ -6,7 +6,7 @@ export default class Header extends Component {
   render() {
 return (
 <MDBContainer fluid>
-<header>
+
 <div className="row d-flex justify-content-center align-items-center" id="top-Section">
   <video playsInline autoPlay muted loop>
     <source src={circuitVideo} type="video/mp4"></source>
@@ -34,7 +34,7 @@ return (
           </div>
     </nav>
 </div>
-</header>  
+ 
 </MDBContainer>  
     );
   }
