@@ -262,8 +262,8 @@ z-index: 2;
 
 #top-Section{
   font-family: 'Roboto', sans-serif;
-   margin-top: 460px;
-  margin-left: 10px;  
+  margin-top: 460px;
+  margin-left: 10px; 
  
 }
 
@@ -321,15 +321,87 @@ z-index: 2;
 }
 
  /* Small Devices, Tablets */
- @media only screen and (max-width : 768px) {
- 
+ @media only screen and (max-width : 768px) and (max-device-width : 1024px) {
   #abilities-Interests{
-
     flex-direction: column;
-  
    }
-
-
-  
+   #top-Section{
+    margin-top: 500px;
+    margin-right: 10px;
+  }
+  #nav-Bar{
+    margin-top: 339px;
+  } 
 }
-
+ /* Surface Duo */
+ @media only screen and (max-width : 540px) {
+  #abilities-Interests{
+   flex-direction: column;
+  }
+  #top-Section{
+   margin-top: 330px;
+   margin-right: 10px;
+ }
+  #nav-Bar{
+   margin-top: 200px;
+ }
+}
+  /* iPad Pro */
+  @media only screen and (max-width : 1024px) and (max-height: 1366px) {
+  #abilities-Interests{
+    flex-direction: column;
+   }
+   #top-Section{
+    margin-top: 700px;
+    margin-right: 10px;
+  }
+  #nav-Bar{
+    margin-top: 480px;
+  }
+}
+ /* Smartphones (portrait and landscape)*/
+ @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (max-device-height: 640px) {
+  #top-Section{
+    margin-top: 260px;
+    margin-right: 10px;
+  }
+  #nav-Bar{
+    margin-top: 155px;
+  }
+  }
+  /* iPhone 6, 7, 8  */
+  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    #top-Section{
+      margin-top: 280px;
+      margin-right: 10px;
+    }
+    #nav-Bar{
+      margin-top: 163px;
+    }
+  } 
+  /* iPhone 6+, 7+, 8+  */
+  @media only screen and (min-device-width: 414px) and (max-device-height: 736px){
+    #top-Section{
+      margin-top: 320px;
+      margin-right: 10px;
+    }
+    #nav-Bar{
+      margin-top: 190px;
+    }
+  }
+  /* iPhone X  */
+  @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+    #top-Section{
+      margin-top: 360px;
+      margin-right: 10px;
+    }
+    #nav-Bar{
+      margin-top: 225px;
+    }
+  }
+  
+  /* iPhone XS Max, XR ----------- */
+  
+  @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+  }
