@@ -11,12 +11,10 @@ body {
   height: 100%;
   overflow-y: auto;
   width: 100%;
-  overflow-x: hidden !important; 
+  overflow-x: hidden !important;
 }
 nav {
-
   object-fit: cover;
-
 }
 video {
   position: absolute;
@@ -25,18 +23,17 @@ video {
   width: 101%;
   height: 100%;
   min-width: 101%;
-  min-height: 100%; 
+  min-height: 100%;
   z-index: -1;
   object-position: center;
   object-fit: cover;
 }
 
 /* Class Selectors */
-.btn-container{
-text-align: center;  
+.btn-container {
+  text-align: center;
 }
-.flip-button{
-
+.flip-button {
   font-size: 20px;
   font-weight: 900;
   text-transform: uppercase;
@@ -50,30 +47,28 @@ text-align: center;
   transform-origin: 50% 0;
   transform-style: preserve-3d;
   margin-bottom: 10px;
-
 }
-.flip-button::before{
-font-family: 'Roboto', "Font Awesome 5 Free";
-content: "\f107" "\00a0" "\00a0" "\00a0"  attr(btn-after) "\00a0" "\00a0" "\00a0"  "\f107";
-position: absolute;
-left: 0;
-top: 100%;
-width: 100%;
-height: 100%;
-color: black;
-line-height: 40px;
-transition: all 0.3s ease-out;
-background: white;
-transform: rotateX(-90deg);
-transform-origin: 50% 0;
-}
-.flip-button:hover{
-  transform: rotateX(90deg) translateY(-10px);
-}
-.card{
+.flip-button::before {
+  font-family: "Roboto", "Font Awesome 5 Free";
+  content: "\f107""\00a0""\00a0""\00a0"attr(btn-after) "\00a0""\00a0""\00a0""\f107";
+  position: absolute;
+  left: 0;
+  top: 100%;
   width: 100%;
   height: 100%;
-  
+  color: black;
+  line-height: 40px;
+  transition: all 0.3s ease-out;
+  background: white;
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0;
+}
+.flip-button:hover {
+  transform: rotateX(90deg) translateY(-10px);
+}
+.card {
+  width: 100%;
+  height: 100%;
 }
 .card-img-top {
   min-width: 100%;
@@ -85,10 +80,13 @@ transform-origin: 50% 0;
 }
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(129, 129, 129), 0 0 40px rgb(129, 129, 129), 0 0 50px rgb(129, 129, 129), 0 0 60px rgb(129, 129, 129);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(129, 129, 129),
+      0 0 40px rgb(129, 129, 129), 0 0 50px rgb(129, 129, 129),
+      0 0 60px rgb(129, 129, 129);
   }
   to {
-    text-shadow: 0 0 20px rgb(192, 192, 192), 0 0 30px rgb(192, 192, 192), 0 0 40px rgb(192, 192, 192), 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+    text-shadow: 0 0 20px rgb(192, 192, 192), 0 0 30px rgb(192, 192, 192),
+      0 0 40px rgb(192, 192, 192), 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
   }
 }
 .gradient-custom {
@@ -96,38 +94,52 @@ transform-origin: 50% 0;
   background: #30cfd0;
 
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right, rgba(48, 207, 208, 0.5), rgba(51, 8, 103, 0.5));
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(48, 207, 208, 0.5),
+    rgba(51, 8, 103, 0.5)
+  );
 
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, rgba(48, 207, 208, 0.5), rgba(51, 8, 103, 0.5))
+  background: linear-gradient(
+    to right,
+    rgba(48, 207, 208, 0.5),
+    rgba(51, 8, 103, 0.5)
+  );
 }
 .linear-wipe {
   margin-top: 50px;
- 
-  background-image: linear-gradient(to right, #00F260, #f79d00, #e2e605, #64f38c);
-  -webkit-background-clip: text; 
-  background-clip: text; 
+
+  background-image: linear-gradient(
+    to right,
+    #00f260,
+    #f79d00,
+    #e2e605,
+    #64f38c
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
-  
+
   background-size: 300%;
-  background-position: -100%;  
-  
+  background-position: -100%;
+
   animation: animatedText 5s infinite alternate-reverse;
 }
-@keyframes animatedText{
-  to{
-    background-position: 100%; 
+@keyframes animatedText {
+  to {
+    background-position: 100%;
   }
 }
 .mask-custom {
   backdrop-filter: blur(15px);
-  background-color: rgba(255,255,255,.2);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 3em;
-  border: 2px solid rgba(255,255,255,.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
   background-clip: padding-box;
   box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
 }
-.progress{
+.progress {
   background: none;
   margin: 0 auto;
   box-shadow: none;
@@ -136,7 +148,7 @@ transform-origin: 50% 0;
   line-height: 150px;
   position: relative;
 }
-.progress:after{
+.progress:after {
   content: "";
   border-radius: 50%;
   border: 15px solid #f2f5f5;
@@ -146,7 +158,7 @@ transform-origin: 50% 0;
   top: 0;
   left: 0;
 }
-.progress > span{
+.progress > span {
   position: absolute;
   top: 0;
   z-index: 1;
@@ -154,10 +166,10 @@ transform-origin: 50% 0;
   height: 100%;
   overflow: hidden;
 }
-.progress .progress-left{
+.progress .progress-left {
   left: 0;
 }
-.progress .progress-bar{
+.progress .progress-bar {
   border-width: 15px;
   border-style: solid;
   position: absolute;
@@ -166,7 +178,7 @@ transform-origin: 50% 0;
   background: none;
   top: 0;
 }
-.progress .progress-left .progress-bar{
+.progress .progress-left .progress-bar {
   left: 100%;
   border-top-right-radius: 80px;
   border-bottom-right-radius: 80px;
@@ -174,10 +186,10 @@ transform-origin: 50% 0;
   -webkit-transform-origin: center left;
   transform-origin: center left;
 }
-.progress .progress-right{
+.progress .progress-right {
   right: 0;
 }
-.progress .progress-right .progress-bar{
+.progress .progress-right .progress-bar {
   left: -100%;
   -webkit-transform-origin: center right;
   transform-origin: center right;
@@ -186,7 +198,7 @@ transform-origin: 50% 0;
   border-right: 0;
   animation: loading-1 1.8s linear forwards;
 }
-.progress .progress-value{
+.progress .progress-value {
   font-size: 24px;
   color: black;
   background-color: white;
@@ -195,28 +207,28 @@ transform-origin: 50% 0;
   height: 100%;
   position: absolute;
 }
-.progress.ninety .progress-bar{
-  border-color:rgb(0, 0, 255);; 
+.progress.ninety .progress-bar {
+  border-color: rgb(0, 0, 255);
 }
-.progress.ninety .progress-left .progress-bar{
+.progress.ninety .progress-left .progress-bar {
   animation: loading-2 1.5s linear forwards 1.8s;
 }
-.progress.seventyFive .progress-bar{
-  border-color:  rgb(0, 63, 255) ;
+.progress.seventyFive .progress-bar {
+  border-color: rgb(0, 63, 255);
 }
-.progress.seventyFive .progress-left .progress-bar{
+.progress.seventyFive .progress-left .progress-bar {
   animation: loading-3 1s linear forwards 1.8s;
 }
-.progress.sixty .progress-bar{
+.progress.sixty .progress-bar {
   border-color: rgb(0, 126, 255);
 }
-.progress.sixty .progress-left .progress-bar{
+.progress.sixty .progress-left .progress-bar {
   animation: loading-4 0.4s linear forwards 1.8s;
 }
-.progress.fifty .progress-bar{
+.progress.fifty .progress-bar {
   border-color: rgb(0, 189, 255);
 }
-.progress.fifty .progress-left .progress-bar{
+.progress.fifty .progress-left .progress-bar {
   animation: loading-1;
 }
 .shape {
@@ -230,46 +242,43 @@ transform-origin: 50% 0;
 
 /* ID selectors */
 
-#main-Section{
-  font-family: 'Ubuntu', sans-serif;
+#main-Section {
+  font-family: "Ubuntu", sans-serif;
   padding-top: 100px;
 }
 
-#work-Title{
+#work-Title {
   padding-top: 100px;
 }
 
 #code-Card,
-#weather-Card{
+#weather-Card {
   margin-left: auto;
   margin-right: auto;
-} 
-
+}
 
 #stock-Scanner-Photo,
-#code-Refractor-Photo{
+#code-Refractor-Photo {
   width: 100%;
   height: 25vw;
   object-fit: contain;
 }
 
-#nav-Bar{
-position: sticky; top: 0;
-margin-top: 315px;
-width: 101%;
-z-index: 2;
+#nav-Bar {
+  position: sticky;
+  top: 0;
+  margin-top: 315px;
+  width: 101%;
+  z-index: 2;
 }
 
-#top-Section{
-  font-family: 'Roboto', sans-serif;
+#top-Section {
+  font-family: "Roboto", sans-serif;
   margin-top: 460px;
-  margin-left: 10px; 
- 
+  margin-left: 10px;
 }
 
-
-
- /* #meta-Cube-Photo{
+/* #meta-Cube-Photo{
 
   width: 100%;
   height: 20vw;
@@ -277,131 +286,129 @@ z-index: 2;
 
 }  */
 
-@keyframes loading-1{
-  0%{
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-  100%{
-      -webkit-transform: rotate(180deg);
-      transform: rotate(180deg);
-  }
-}
-@keyframes loading-2{
-  0%{
-    
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-  }
-  100%{
-    
-      -webkit-transform: rotate(144deg);
-      transform: rotate(144deg);
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
   }
 }
-@keyframes loading-3{
-  0%{
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-  100%{
-      -webkit-transform: rotate(90deg);
-      transform: rotate(90deg);
+  100% {
+    -webkit-transform: rotate(144deg);
+    transform: rotate(144deg);
   }
 }
-@keyframes loading-4{
-  0%{
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-  100%{
-      -webkit-transform: rotate(36deg);
-      transform: rotate(36deg);
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+@keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(36deg);
+    transform: rotate(36deg);
   }
 }
 
- /* Small Devices, Tablets */
- @media only screen and (max-width : 768px) and (max-device-width : 1024px) {
-  #abilities-Interests{
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) and (max-device-width: 1024px) {
+  #abilities-Interests {
     flex-direction: column;
-   }
-   #top-Section{
+  }
+  #top-Section {
     margin-top: 500px;
     margin-right: 10px;
   }
-  #nav-Bar{
+  #nav-Bar {
     margin-top: 339px;
-  } 
-}
- /* Surface Duo */
- @media only screen and (max-width : 540px) {
-  #abilities-Interests{
-   flex-direction: column;
   }
-  #top-Section{
-   margin-top: 330px;
-   margin-right: 10px;
- }
-  #nav-Bar{
-   margin-top: 200px;
- }
 }
-  /* iPad Pro */
-  @media only screen and (max-width : 1024px) and (max-height: 1366px) {
-  #abilities-Interests{
+/* Surface Duo */
+@media only screen and (max-width: 540px) {
+  #abilities-Interests {
     flex-direction: column;
-   }
-   #top-Section{
+  }
+  #top-Section {
+    margin-top: 330px;
+    margin-right: 10px;
+  }
+  #nav-Bar {
+    margin-top: 200px;
+  }
+}
+/* iPad Pro */
+@media only screen and (max-width: 1024px) and (max-height: 1366px) {
+  #abilities-Interests {
+    flex-direction: column;
+  }
+  #top-Section {
     margin-top: 700px;
     margin-right: 10px;
   }
-  #nav-Bar{
+  #nav-Bar {
     margin-top: 480px;
   }
 }
- /* Smartphones (portrait and landscape)*/
- @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (max-device-height: 640px) {
-  #top-Section{
+/* Smartphones (portrait and landscape)*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (max-device-height: 640px) {
+  #top-Section {
     margin-top: 260px;
     margin-right: 10px;
   }
-  #nav-Bar{
+  #nav-Bar {
     margin-top: 155px;
   }
+}
+/* iPhone 6, 7, 8  */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  #top-Section {
+    margin-top: 280px;
+    margin-right: 10px;
   }
-  /* iPhone 6, 7, 8  */
-  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-    #top-Section{
-      margin-top: 280px;
-      margin-right: 10px;
-    }
-    #nav-Bar{
-      margin-top: 163px;
-    }
-  } 
-  /* iPhone 6+, 7+, 8+  */
-  @media only screen and (min-device-width: 414px) and (max-device-height: 736px){
-    #top-Section{
-      margin-top: 320px;
-      margin-right: 10px;
-    }
-    #nav-Bar{
-      margin-top: 190px;
-    }
+  #nav-Bar {
+    margin-top: 163px;
   }
-  /* iPhone X  */
-  @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-    #top-Section{
-      margin-top: 360px;
-      margin-right: 10px;
-    }
-    #nav-Bar{
-      margin-top: 225px;
-    }
+}
+/* iPhone 6+, 7+, 8+  */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) {
+  #top-Section {
+    margin-top: 320px;
+    margin-right: 10px;
   }
-  
-  /* iPhone XS Max, XR ----------- */
-  
-  @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  #nav-Bar {
+    margin-top: 190px;
+  }
+}
+/* iPhone X  */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  #top-Section {
+    margin-top: 360px;
+    margin-right: 10px;
+  }
+  #nav-Bar {
+    margin-top: 225px;
+  }
+}
+
+/* iPhone XS Max, XR ----------- */
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
   /* Styles */
-  }
+}
