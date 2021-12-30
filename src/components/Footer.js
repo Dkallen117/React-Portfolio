@@ -5,7 +5,15 @@ import 'react-toastify/dist/ReactToastify.css';
 import '../assets/css/style.css'
 function Footer() {
   init("user_MtnRDz54CbneHj0t1h6cd");
-  const notify = () => toast("Wow so easy!");
+  const notify = () => toast('Message has been sent!', {
+    position: "bottom-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+  });
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -43,7 +51,7 @@ function Footer() {
           <div className="row justify-content-center">
             <div className="col-12 col-md-10 col-lg-7 col-xl-6">
               <form className="card bg-image gradient-custom mask-custom p-5 text-white wow fadeInUp" ref={form} onSubmit={sendEmail}>
-                <h2 className="text-center mb-5">Message Form</h2>
+                <h2 className="text-center mb-5">Contact Form</h2>
                 <div className="form-outline form-white mb-4">
                   <input type="text" name="name" id="name" value={name} onChange={(e) => handleChange(e)} className="form-control form-control-lg" required />
                   <label className="form-label" for="form3Example4">Name</label>
@@ -51,7 +59,7 @@ function Footer() {
 
                 <div className="form-outline form-white mb-4">
                   <input type="email" name="email" id="email" value={email} onChange={(e) => handleChange(e)} className="form-control form-control-lg" required />
-                  <label className="form-label" for="form3Example3">Email address</label>
+                  <label className="form-label" for="form3Example3">Email Address</label>
                 </div>
 
                 <div className="form-outline form-white mb-4">

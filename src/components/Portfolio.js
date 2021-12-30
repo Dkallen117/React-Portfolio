@@ -161,10 +161,8 @@ export default class Porfolio extends Component {
         <h1 className="wow slideInLeft my-4 text-center" id="work-Title">Portfolio</h1>
         <hr className="wow slideInLeft mb-5" style={{ borderWidth: '10px', backgroundColor: '#00000099', color: '#FFFFFF', }}></hr>
 
-
-
         <div className="card-group row row-cols-1 row-cols-md-2">
-
+          {/* Book Search Card */}
           <div className="col-md-4 mb-4 my-5">
             <div className="card d-flex flex-column wow fadeInUp text-center">
               <div className="bg-image hover zoom">
@@ -173,7 +171,7 @@ export default class Porfolio extends Component {
                 </a>
               </div>
               <div className="mask rgba-white-slight"></div>
-              <h4 className="card-title">Book Search</h4>
+              <h4 className="card-title mt-5">Book Search</h4>
               <p className="card-text">Click the image to be taken to a refactored RESTful to a MERN-stack
                 based book search application. </p>
               <a href="https://github.com/Dkallen117/book-Search-Engine" target="_blank" rel="noreferrer">
@@ -181,8 +179,7 @@ export default class Porfolio extends Component {
               </a>
             </div>
           </div>
-
-
+          {/* RPG card */}
           <div className="col-md-4 mb-4 my-5">
             <div className="card d-flex flex-column wow fadeInUp text-center">
               <div className="bg-image hover zoom">
@@ -191,7 +188,7 @@ export default class Porfolio extends Component {
                 </a>
               </div>
               <div className="mask rgba-white-slight"></div>
-              <h4 className="card-title">RPG Database</h4>
+              <h4 className="card-title mt-5">RPG Database</h4>
               <p className="card-text">Click the image to be taken to experience my second team-based website
                 where users can create RPG style characters and compare them to previously created ones</p>
               <a href="https://github.com/Dkallen117/rpg-character-sheet" target="_blank" rel="noreferrer">
@@ -199,7 +196,7 @@ export default class Porfolio extends Component {
               </a>
             </div>
           </div>
-
+          {/* E-commerce card */}
           <div className="col-md-4 mb-4 my-5">
             <div className="card d-flex flex-column wow fadeInUp text-center">
               <div className="bg-image hover zoom">
@@ -208,28 +205,10 @@ export default class Porfolio extends Component {
                 </a>
               </div>
               <div className="mask rgba-white-slight"></div>
-              <h4 className="card-title">E-Commerce Backend</h4>
+              <h4 className="card-title mt-5">E-Commerce Backend</h4>
               <p className="card-text">Click the image to be taken to a video demonstration of how to GET, PUT, POST,
                 and DELETE products, tags, and categories in this e-commerce backend application</p>
               <a href="https://github.com/Dkallen117/e-commerce-backend" target="_blank" rel="noreferrer">
-                <button type="button" className="btn blue-gradient btn-lg mb-5">GitHub Respository</button>
-              </a>
-            </div>
-          </div>
-
-          {/* Stock Scanner Card */}
-          <div className="col-md-4 mb-4 my-5">
-            <div className="card d-flex flex-column wow fadeInUp text-center">
-              <div className="bg-image hover zoom">
-                <a href="https://dkallen117.github.io/StockScanner/" target="_blank" rel="noreferrer">
-                  <img className="card-img-top img-fluid" id="stock-Scanner-Photo" src={stockScanner} alt="Stock Scanner"></img>
-                </a>
-              </div>
-              <div className="mask rgba-white-slight"></div>
-              <h4 className="card-title">Stock Scanner</h4>
-              <p className="card-text">Click the image to be taken to my first team-based website
-                utilizing two different APIs. </p>
-              <a href="https://github.com/Dkallen117/StockScanner" target="_blank" rel="noreferrer">
                 <button type="button" className="btn blue-gradient btn-lg mb-5">GitHub Respository</button>
               </a>
             </div>
@@ -251,11 +230,28 @@ export default class Porfolio extends Component {
                 <a href="https://dribbble.com/shots/1453837-Snarf-minimal-vector-drawing-ThunderCats" target="_blank" rel="noreferrer">Image Link</a>)</p>
             </div>
           </div>
+          {/* Stock Scanner Card */}
+          <div className="col-md-4 mb-4 my-5">
+            <div className="card d-flex flex-column wow fadeInUp text-center">
+              <div className="bg-image hover zoom">
+                <a href="https://dkallen117.github.io/StockScanner/" target="_blank" rel="noreferrer">
+                  <img className="card-img-top img-fluid" id="stock-Scanner-Photo" src={stockScanner} alt="Stock Scanner"></img>
+                </a>
+              </div>
+              <div className="mask rgba-white-slight"></div>
+              <h4 className="card-title">Stock Scanner</h4>
+              <p className="card-text">Click the image to be taken to my first team-based website
+                utilizing two different APIs. </p>
+              <a href="https://github.com/Dkallen117/StockScanner" target="_blank" rel="noreferrer">
+                <button type="button" className="btn blue-gradient btn-lg mb-5">GitHub Respository</button>
+              </a>
+            </div>
+          </div>
           {/* Metatron Card */}
           <div className="col-md-4 mb-4 my-5">
             <div className="card d-flex flex-column wow fadeInUp text-center">
               <div className="bg-image hover zoom">
-                <a href="https://www.youtube.com/watch?v=WM8Mky99coE" target="_blank" rel="noreferrer">
+                <a href='https://drive.google.com/file/d/1r_xoRh5Fk8TUapcZ_KXA4iK4wwfuUIvl/view?usp=sharing' target="_blank" rel="noreferrer">
                   <img className="card-img-top" id="meta-Cube-Photo" src={metatronPic} alt="Metatrons Cube"></img>
                   <div className="mask rgba-white-slight"></div>
                 </a>
@@ -269,11 +265,11 @@ export default class Porfolio extends Component {
           <div className="col-md-4 mb-4 my-5" id="weather-Card">
             <div className="card d-flex flex-column wow fadeInUp text-center">
               <div className="bg-image hover zoom">
-                <img className="card-img-top img-fluid" id="code-Refractor-Photo" src={weatherPic} alt="Weather"></img>
+                <a href='https://dkallen117.github.io/weather-Dashboard/' target="_blank" rel="noreferrer">
+                  <img className="card-img-top img-fluid" id="code-Refractor-Photo" src={weatherPic} alt="Weather"></img>
+                  <div className="mask rgba-white-slight"></div>
+                </a>
               </div>
-              <a href="#!">
-                <div className="mask rgba-white-slight"></div>
-              </a>
               <h4 className="card-title">Weather Dashboard</h4>
               <p className="card-text">Click the image to be taken to a daily and 5-day forecast weather application. </p>
               <a href="https://github.com/Dkallen117/weather-Dashboard" target="_blank" rel="noreferrer">
@@ -285,11 +281,11 @@ export default class Porfolio extends Component {
           <div className="col-md-4 mb-4 my-5" id="code-Card">
             <div className="card d-flex flex-column wow fadeInUp text-center">
               <div className="bg-image hover zoom">
-                <img className="card-img-top img-fluid" id="code-Refractor-Photo" src={refactorPic} alt="Code Refractor"></img>
+                <a href='https://dkallen117.github.io/code-Refractor/' target="_blank" rel="noreferrer">
+                  <img className="card-img-top img-fluid" id="code-Refractor-Photo" src={refactorPic} alt="Code Refractor"></img>
+                  <div className="mask rgba-white-slight"></div>
+                </a>
               </div>
-              <a href="#!">
-                <div className="mask rgba-white-slight"></div>
-              </a>
               <h4 className="card-title">Code Refracting</h4>
               <p className="card-text">Click the image to be taken to the first website I practiced code refractoring.</p>
               <a href="https://github.com/Dkallen117/code-Refractor" target="_blank" rel="noreferrer">
