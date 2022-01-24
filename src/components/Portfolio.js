@@ -15,149 +15,153 @@ export default class Porfolio extends Component {
 
       <section className="container-fluid" id="main-Section">
         {/* Abilities and Interests */}
-        <h1 className="wow fadeInUp text-center my-5">About</h1>
-        <hr className="wow fadeInUp mb-5" style={{ borderWidth: '10px', backgroundColor: '#00000099', color: '#FFFFFF', }}></hr>
-        <h2 className="wow fadeInUp text-center my-5"> Abilities and Interests </h2>
-        <section className="container-fluid ml-3" id="abilities-Interests">
-          <div className="row d-flex justify-content-around ">
+        <div id="about">
+          <h1 className="wow fadeInUp text-center my-5">About</h1>
+        </div>
+        <div id="skills">
+          <hr className="wow fadeInUp mb-5" style={{ borderWidth: '10px', backgroundColor: '#00000099', color: '#FFFFFF', marginTop: '0' }}></hr>
+          <h2 className="wow fadeInUp text-center my-5"> Abilities and Interests </h2>
+          <section className="container-fluid ml-3" id="abilities-Interests">
+            <div className="row d-flex justify-content-around ">
 
 
-            <div className="shape d-flex flex-column justify-content-center align-items-center wow fadeInUp">
-              <i className="fas fa-database fa-2x"></i>
-              <h2>Back End</h2>
-              <p className="text-center"> Database Architecture and MySQL</p>
-            </div>
-
-            <div className="shape d-flex flex-column justify-content-center align-items-center wow fadeInUp">
-              <i className="fab fa-bootstrap fa-2x"></i>
-              <h2>Front End</h2>
-              <p className="text-center"> Creatively Designed, Intuitively Driven </p>
-            </div>
-
-            <div className="shape d-flex flex-column justify-content-center align-items-center  wow fadeInUp">
-              <i className="fas fa-bug fa-2x"></i>
-              <h2>QA Testing</h2>
-              <p className="text-center"> Integration Testing // Jest </p>
-            </div>
-
-            <div className="shape d-flex flex-column justify-content-center align-items-center  wow fadeInUp">
-              <i className="fas fa-code-branch fa-2x"></i>
-              <h2>Source Control</h2>
-              <p className="text-center"> Scrum Master and Team Player </p>
-            </div>
-          </div>
-        </section>
-        {/* Skills */}
-        <div className="container my-5">
-          <h2 className="text-center my-5 wow zoomIn"> Skill Set Knowledge </h2>
-          <div className="row d-flex justify-content-around">
-
-            <div className="col-md-3 col-sm-6 wow fadeInLeft">
-              <div className="progress ninety">
-                <span className="progress-left">
-                  <span className="progress-bar wow"></span>
-                </span>
-                <span className="progress-right">
-                  <span className="progress-bar wow"></span>
-                </span>
-                <div className="progress-value">90%</div>
+              <div className="shape d-flex flex-column justify-content-center align-items-center wow fadeInUp">
+                <i className="fas fa-database fa-2x"></i>
+                <h2>Back End</h2>
+                <p className="text-center"> Database Architecture and MySQL</p>
               </div>
-              <h2 className="text-center my-4"> HTML </h2>
-            </div>
 
-            <div className="col-md-3 col-sm-6 wow fadeInUp">
-              <div className="progress ninety">
-                <span className="progress-left">
-                  <span className="progress-bar wow"></span>
-                </span>
-                <span className="progress-right">
-                  <span className="progress-bar wow"></span>
-                </span>
-                <div className="progress-value">90%</div>
+              <div className="shape d-flex flex-column justify-content-center align-items-center wow fadeInUp">
+                <i className="fab fa-bootstrap fa-2x"></i>
+                <h2>Front End</h2>
+                <p className="text-center"> Creatively Designed, Intuitively Driven </p>
               </div>
-              <h2 className="text-center my-4"> Microsoft VSC </h2>
-            </div>
 
-            <div className="col-md-3 col-sm-6 wow fadeInUp">
-              <div className="progress seventyFive">
-                <span className="progress-left">
-                  <span className="progress-bar wow"></span>
-                </span>
-                <span className="progress-right">
-                  <span className="progress-bar wow"></span>
-                </span>
-                <div className="progress-value">75%</div>
+              <div className="shape d-flex flex-column justify-content-center align-items-center  wow fadeInUp">
+                <i className="fas fa-bug fa-2x"></i>
+                <h2>QA Testing</h2>
+                <p className="text-center"> Integration Testing // Jest </p>
               </div>
-              <h2 className="text-center my-4"> JS </h2>
-            </div>
 
-            <div className="col-md-3 col-sm-6 wow fadeInRight">
-              <div className="progress seventyFive">
-                <span className="progress-left">
-                  <span className="progress-bar wow"></span>
-                </span>
-                <span className="progress-right">
-                  <span className="progress-bar wow"></span>
-                </span>
-                <div className="progress-value">75%</div>
+              <div className="shape d-flex flex-column justify-content-center align-items-center  wow fadeInUp">
+                <i className="fas fa-code-branch fa-2x"></i>
+                <h2>Source Control</h2>
+                <p className="text-center"> Scrum Master and Team Player </p>
               </div>
-              <h2 className="text-center my-4"> CSS </h2>
             </div>
+          </section>
+          {/* Skills */}
+          <div className="container my-5">
+            <h2 className="text-center my-5 wow zoomIn"> Skill Set Knowledge </h2>
+            <div className="row d-flex justify-content-around">
 
-            <div className="col-md-3 col-sm-6 my-5 wow fadeInLeft">
-              <div className="progress sixty">
-                <span className="progress-left">
-                  <span className="progress-bar wow"></span>
-                </span>
-                <span className="progress-right">
-                  <span className="progress-bar wow"></span>
-                </span>
-                <div className="progress-value">60%</div>
+              <div className="col-md-3 col-sm-6 wow fadeInLeft">
+                <div className="progress ninety">
+                  <span className="progress-left">
+                    <span className="progress-bar wow"></span>
+                  </span>
+                  <span className="progress-right">
+                    <span className="progress-bar wow"></span>
+                  </span>
+                  <div className="progress-value">90%</div>
+                </div>
+                <h2 className="text-center my-4"> HTML </h2>
               </div>
-              <h2 className="text-center my-4"> QA Testing </h2>
-            </div>
 
-            <div className="col-md-3 col-sm-6 my-5 wow fadeInUp">
-              <div className="progress sixty">
-                <span className="progress-left">
-                  <span className="progress-bar wow"></span>
-                </span>
-                <span className="progress-right">
-                  <span className="progress-bar wow"></span>
-                </span>
-                <div className="progress-value">60%</div>
+              <div className="col-md-3 col-sm-6 wow fadeInUp">
+                <div className="progress ninety">
+                  <span className="progress-left">
+                    <span className="progress-bar wow"></span>
+                  </span>
+                  <span className="progress-right">
+                    <span className="progress-bar wow"></span>
+                  </span>
+                  <div className="progress-value">90%</div>
+                </div>
+                <h2 className="text-center my-4"> Microsoft VSC </h2>
               </div>
-              <h2 className="text-center my-4"> React </h2>
-            </div>
 
-            <div className="col-md-3 col-sm-6 my-5 wow fadeInUp">
-              <div className="progress fifty">
-                <span className="progress-left">
-                  <span className="progress-bar wow"></span>
-                </span>
-                <span className="progress-right">
-                  <span className="progress-bar wow"></span>
-                </span>
-                <div className="progress-value">50%</div>
+              <div className="col-md-3 col-sm-6 wow fadeInUp">
+                <div className="progress seventyFive">
+                  <span className="progress-left">
+                    <span className="progress-bar wow"></span>
+                  </span>
+                  <span className="progress-right">
+                    <span className="progress-bar wow"></span>
+                  </span>
+                  <div className="progress-value">75%</div>
+                </div>
+                <h2 className="text-center my-4"> JS </h2>
               </div>
-              <h2 className="text-center my-4"> Unity </h2>
-            </div>
 
-            <div className="col-md-3 col-sm-6 my-5 wow fadeInRight">
-              <div className="progress fifty">
-                <span className="progress-left">
-                  <span className="progress-bar wow"></span>
-                </span>
-                <span className="progress-right">
-                  <span className="progress-bar wow"></span>
-                </span>
-                <div className="progress-value">50%</div>
+              <div className="col-md-3 col-sm-6 wow fadeInRight">
+                <div className="progress seventyFive">
+                  <span className="progress-left">
+                    <span className="progress-bar wow"></span>
+                  </span>
+                  <span className="progress-right">
+                    <span className="progress-bar wow"></span>
+                  </span>
+                  <div className="progress-value">75%</div>
+                </div>
+                <h2 className="text-center my-4"> CSS </h2>
               </div>
-              <h2 className="text-center my-4"> C# </h2>
+
+              <div className="col-md-3 col-sm-6 my-5 wow fadeInLeft">
+                <div className="progress sixty">
+                  <span className="progress-left">
+                    <span className="progress-bar wow"></span>
+                  </span>
+                  <span className="progress-right">
+                    <span className="progress-bar wow"></span>
+                  </span>
+                  <div className="progress-value">60%</div>
+                </div>
+                <h2 className="text-center my-4"> QA Testing </h2>
+              </div>
+
+              <div className="col-md-3 col-sm-6 my-5 wow fadeInUp">
+                <div className="progress sixty">
+                  <span className="progress-left">
+                    <span className="progress-bar wow"></span>
+                  </span>
+                  <span className="progress-right">
+                    <span className="progress-bar wow"></span>
+                  </span>
+                  <div className="progress-value">60%</div>
+                </div>
+                <h2 className="text-center my-4"> React </h2>
+              </div>
+
+              <div className="col-md-3 col-sm-6 my-5 wow fadeInUp">
+                <div className="progress fifty">
+                  <span className="progress-left">
+                    <span className="progress-bar wow"></span>
+                  </span>
+                  <span className="progress-right">
+                    <span className="progress-bar wow"></span>
+                  </span>
+                  <div className="progress-value">50%</div>
+                </div>
+                <h2 className="text-center my-4"> Unity </h2>
+              </div>
+
+              <div className="col-md-3 col-sm-6 my-5 wow fadeInRight">
+                <div className="progress fifty">
+                  <span className="progress-left">
+                    <span className="progress-bar wow"></span>
+                  </span>
+                  <span className="progress-right">
+                    <span className="progress-bar wow"></span>
+                  </span>
+                  <div className="progress-value">50%</div>
+                </div>
+                <h2 className="text-center my-4"> C# </h2>
+              </div>
             </div>
+            <div id="port"></div>
           </div>
         </div>
-
         <h1 className="wow slideInLeft my-4 text-center" id="work-Title">Portfolio</h1>
         <hr className="wow slideInLeft mb-5" style={{ borderWidth: '10px', backgroundColor: '#00000099', color: '#FFFFFF', }}></hr>
 

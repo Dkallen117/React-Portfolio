@@ -24,7 +24,7 @@ export default class NavBar extends Component {
               <a className="nav-link" href="#main-Section">About</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link smooth-scroll" href="#work-Title">Portfolio</a>
+              <a className="nav-link smooth-scroll" href="#port">Portfolio</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#contact">Contact</a>
