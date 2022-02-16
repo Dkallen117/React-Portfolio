@@ -51,27 +51,58 @@ function Footer() {
           <div className="row justify-content-center">
 
             <div className="col-12 col-md-10 col-lg-7 col-xl-6 mt-4">
-              <div>
-                <form className="card bg-image gradient-custom mask-custom p-5 text-white wow fadeInUp" ref={form} onSubmit={sendEmail}>
-                  <h2 className="text-center mb-5">Contact Form</h2>
-                  <div className="form-outline form-white mb-4">
-                    <input type="text" name="name" id="name" value={name} onChange={(e) => handleChange(e)} className="form-control form-control-lg" required />
-                    <label className="form-label" for="form3Example4">Name</label>
-                  </div>
+              <div className="modal fade" id="modalContactForm" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+                <form ref={form} onSubmit={sendEmail}>
+                  <div className="modal-dialog" role="document">
+                    <div className="modal-content">
+                      <div className="modal-header text-center">
+                        <h4 className="modal-title w-100 font-weight-bold">Contact Me</h4>
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
 
-                  <div className="form-outline form-white mb-4">
-                    <input type="email" name="email" id="email" value={email} onChange={(e) => handleChange(e)} className="form-control form-control-lg" required />
-                    <label className="form-label" for="form3Example3">Email Address</label>
-                  </div>
+                      <div className="modal-body mx-3">
+                        <div className="md-form mb-5">
+                          <i className="fas fa-user prefix grey-text"></i>
+                          <input type="text" name="name" id="name" value={name} onChange={(e) => handleChange(e)}
+                            className="form-control validate" required></input>
+                          <label data-error="wrong" data-success="right" >Your name</label>
+                        </div>
 
-                  <div className="form-outline form-white mb-4">
-                    <textarea className="form-control" name="message" id="message" value={message} onChange={(e) => handleChange(e)} rows="4" required></textarea>
-                    <label className="form-label" for="form4Example3">Message</label>
+                        <div className="md-form mb-5">
+                          <i className="fas fa-envelope-square prefix grey-text"></i>
+                          <input type="email" name="email" id="email" value={email} onChange={(e) => handleChange(e)}
+                            className="form-control validate" required></input>
+                          <label data-error="wrong" data-success="right" >Your email address</label>
+                        </div>
+
+
+
+                        <div className="md-form">
+                          <i className="fas fa-pencil prefix grey-text"></i>
+                          <textarea type="text" className="md-textarea form-control" name="message"
+                            id="message" value={message} onChange={(e) => handleChange(e)} rows="4" required></textarea>
+                          <label data-error="wrong" data-success="right" >Your message</label>
+                        </div>
+
+                      </div>
+                      <div className="modal-footer d-flex justify-content-center">
+                        <button type="submit" value="Send" className="btn btn-unique">Send <i className="fas fa-paper-plane-o ml-1"></i></button>
+                        <ToastContainer />
+                      </div>
+                    </div>
                   </div>
-                  <button type="submit" value="Send" className="btn btn-light btn-block mb-4">Send</button>
-                  <ToastContainer />
                 </form>
               </div>
+              <div className="text-center">
+                <a className="mb-4" data-toggle="modal" data-target="#modalContactForm">
+                  <i className="far fa-envelope fa-3x"></i>
+                </a>
+              </div>
+
+
 
               <div className='bottom-links'>
                 <div className="d-flex justify-content-around my-3">
