@@ -12,19 +12,15 @@ import $ from 'jquery';
 
 function Portfolio() {
 
-
   $(function () {
 
     $(".filter-button").click(function () {
       const value = $(this).attr('data-filter');
 
       if (value === "all") {
-        //$('.filter').removeClass('hidden');
         $('.filter').show('1000');
       }
       else {
-        //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-        //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
         $(".filter").not('.' + value).hide('3000');
         $('.filter').filter('.' + value).show('3000');
 
@@ -192,17 +188,17 @@ function Portfolio() {
       </div>
       <h1 className="wow slideInLeft my-4 text-center" id="work-Title">Portfolio</h1>
       <hr className="wow slideInLeft mb-5" style={{ borderWidth: '10px', backgroundColor: '#00000099', color: '#FFFFFF', }}></hr>
-      <div className='d-flex justify-content-center' id='btnContainer'>
+      <div className='wow slideInRight d-flex justify-content-center' id='btnContainer'>
         <button type="button" className="btn btn-outline-primary waves-effect filter-button mr-4" data-filter="all">All</button>
         <button type="button" className="btn btn-outline-default waves-effect filter-button" data-filter="web">Web Dev</button>
         <button type="button" className="btn btn-outline-info waves-effect filter-button ml-4" data-filter="game">Game Dev</button>
       </div>
       <div className="card-group row row-cols-1 row-cols-md-2">
-
         {/* Book Search Card */}
         <div className="col-md-4 mb-4 my-5 filter web">
           <div className='overlay-container'>
             <div className="card d-flex flex-column wow fadeInUp text-center">
+              <h4 className="card-header">Book Search</h4>
               <div className="bg-image">
                 <a href="https://book-search-engine-mern-2021.herokuapp.com/" target="_blank" rel="noreferrer">
                   <img className="card-img-top img-fluid" src={bookSearchPic} id="booksearch-pic" alt="Book Search"></img>
@@ -211,11 +207,10 @@ function Portfolio() {
               <div className="mask rgba-white-slight"></div>
               <div className='overlay1'>
                 <div className='overlay-text'>
-                  <h4 className="card-title mt-5">Book Search</h4>
                   <p className="card-text">Click the image to be taken to a refactored RESTful to a MERN-stack
                     based book search application. </p>
                   <a href="https://github.com/Dkallen117/book-Search-Engine" target="_blank" rel="noreferrer">
-                    <button type="button" className="btn blue-gradient btn-lg mb-5">GitHub Respository</button>
+                    <button type="button" className="btn blue-gradient btn-lg mb-2">GitHub Respository</button>
                   </a>
                 </div>
               </div>
@@ -226,6 +221,7 @@ function Portfolio() {
         <div className="col-md-4 mb-4 my-5 filter web">
           <div className='overlay-container'>
             <div className="card d-flex flex-column wow fadeInUp text-center">
+              <h4 className="card-header">RPG Database</h4>
               <div className="bg-image">
                 <a href="https://jefarth-rpg-database.herokuapp.com/" target="_blank" rel="noreferrer">
                   <img className="card-img-top img-fluid" src={rpgPic} id="rpg-pic" alt="RPG"></img>
@@ -234,11 +230,10 @@ function Portfolio() {
               <div className="mask rgba-white-slight"></div>
               <div className='overlay2'>
                 <div className='overlay-text'>
-                  <h4 className="card-title mt-5">RPG Database</h4>
                   <p className="card-text">Click the image to be taken to experience my second team-based website
                     where users can create RPG style characters and compare them to previously created ones</p>
                   <a href="https://github.com/Dkallen117/rpg-character-sheet" target="_blank" rel="noreferrer">
-                    <button type="button" className="btn blue-gradient btn-lg mb-5">GitHub Respository</button>
+                    <button type="button" className="btn blue-gradient btn-lg mb-2">GitHub Respository</button>
                   </a>
                 </div>
               </div>
@@ -249,6 +244,7 @@ function Portfolio() {
         <div className="col-md-4 mb-4 my-5 filter web">
           <div className='overlay-container'>
             <div className="card d-flex flex-column wow fadeInUp text-center">
+              <h4 className="card-header">E-Commerce Backend</h4>
               <div className="bg-image">
                 <a href="https://drive.google.com/file/d/1L170PB6NC_hPIxG2VKxrctGLzShzYpn1/view" target="_blank" rel="noreferrer">
                   <img className="card-img-top img-fluid" src={ecommercePic} id="ecommerce-pic" alt="E-Commerce"></img>
@@ -257,11 +253,10 @@ function Portfolio() {
               <div className='overlay3'>
                 <div className='overlay-text'>
                   <div className="mask rgba-white-slight"></div>
-                  <h4 className="card-title mt-5">E-Commerce Backend</h4>
                   <p className="card-text">Click the image to be taken to a video demonstration of how to GET, PUT, POST,
                     and DELETE products, tags, and categories in this e-commerce backend application</p>
                   <a href="https://github.com/Dkallen117/e-commerce-backend" target="_blank" rel="noreferrer">
-                    <button type="button" className="btn blue-gradient btn-lg mb-5">GitHub Respository</button>
+                    <button type="button" className="btn blue-gradient btn-lg mb-2">GitHub Respository</button>
                   </a>
                 </div>
               </div>
@@ -272,6 +267,7 @@ function Portfolio() {
         <div className="col-md-4 mb-4 my-5 filter game">
           <div className='overlay-container'>
             <div className="card d-flex flex-column wow fadeInUp text-center" id="snarf-Card">
+              <h4 className="card-header">Video Game Studio Prezi Presentation</h4>
               <div className="bg-image">
                 <a href="https://prezi.com/dwii7bnwk3rz/team-everybody-loves-snarf/" target="_blank" rel="noreferrer">
                   <img className="card-img-top" src={snarfPic}
@@ -282,7 +278,6 @@ function Portfolio() {
               </div>
               <div className='overlay4'>
                 <div className='overlay-text'>
-                  <h4 className="card-title mt-2">Video Game Studio Prezi Presentation</h4>
                   <p className='card-text'>Click the image to be taken to a team-based prezi presentation
                     for a fictional video game studio! (Image Credit: Jason Velazquez //
                     <a href="https://dribbble.com/shots/1453837-Snarf-minimal-vector-drawing-ThunderCats" target="_blank" rel="noreferrer">Image Link</a>)</p>
@@ -295,6 +290,7 @@ function Portfolio() {
         <div className="col-md-4 mb-4 my-5 filter web">
           <div className='overlay-container'>
             <div className="card d-flex flex-column wow fadeInUp text-center">
+              <h4 className="card-header">Stock Scanner</h4>
               <div className="bg-image">
                 <a href="https://dkallen117.github.io/StockScanner/" target="_blank" rel="noreferrer">
                   <img className="card-img-top img-fluid" id="stock-Scanner-Photo" src={stockScanner} alt="Stock Scanner"></img>
@@ -303,7 +299,6 @@ function Portfolio() {
               <div className="mask rgba-white-slight"></div>
               <div className='overlay1'>
                 <div className='overlay-text'>
-                  <h4 className="card-title mt-2">Stock Scanner</h4>
                   <p className="card-text">Click the image to be taken to my first team-based website
                     utilizing two different APIs. </p>
                   <a href="https://github.com/Dkallen117/StockScanner" target="_blank" rel="noreferrer">
@@ -318,15 +313,15 @@ function Portfolio() {
         <div className="col-md-4 mb-4 my-5 filter game">
           <div className='overlay-container'>
             <div className="card d-flex flex-column wow fadeInUp text-center">
+              <h4 className="card-header">Metatron's Cube YouTube Video</h4>
               <div className="bg-image">
                 <a href='https://drive.google.com/file/d/1r_xoRh5Fk8TUapcZ_KXA4iK4wwfuUIvl/view?usp=sharing' target="_blank" rel="noreferrer">
-                  <img className="card-img-top" id="meta-Cube-Photo" src={metatronPic} alt="Metatrons Cube"></img>
+                  <img className="card-img-top img-fluid" id="meta-Cube-Photo" src={metatronPic} alt="Metatrons Cube"></img>
                   <div className="mask rgba-white-slight"></div>
                 </a>
               </div>
               <div className='overlay2'>
                 <div className='overlay-text'>
-                  <h4 className="card-title mt-2">Metatron's Cube YouTube Video</h4>
                   <p className="card-text">Click the image to be taken to a YouTube video of my teams fictional video game
                     pitch to a fictional game studio.</p>
                 </div>
@@ -338,15 +333,15 @@ function Portfolio() {
         <div className="col-md-4 mb-4 my-5 filter web" id="weather-Card">
           <div className='overlay-container'>
             <div className="card d-flex flex-column wow fadeInUp text-center">
+              <h4 className="card-header">Weather Dashboard</h4>
               <div className="bg-image">
                 <a href='https://dkallen117.github.io/weather-Dashboard/' target="_blank" rel="noreferrer">
-                  <img className="card-img-top img-fluid" id="weather-Photo" src={weatherPic} alt="Weather"></img>
+                  <img className="card-img img-fluid" id="weather-Photo" src={weatherPic} alt="Weather"></img>
                   <div className="mask rgba-white-slight"></div>
                 </a>
               </div>
               <div className='overlay3'>
                 <div className='overlay-text'>
-                  <h4 className="card-title mt-2">Weather Dashboard</h4>
                   <p className="card-text">Click the image to be taken to a daily and 5-day forecast weather application. </p>
                   <a href="https://github.com/Dkallen117/weather-Dashboard" target="_blank" rel="noreferrer">
                     <button type="button" className="btn blue-gradient btn-lg mb-2">GitHub Respository</button>
@@ -359,17 +354,17 @@ function Portfolio() {
         {/* Code Refactor Card */}
         <div className="col-md-4 mb-4 my-5 filter web" id="code-Card">
           <div className='overlay-container'>
-            <div className="card d-flex flex-column wow fadeInUp text-center">
+            <div className="card d-flex wow fadeInUp text-center">
+              <h4 className="card-header">Code Refactoring</h4>
               <div className="bg-image">
                 <a href='https://dkallen117.github.io/code-Refractor/' target="_blank" rel="noreferrer">
-                  <img className="card-img-top img-fluid" id="code-Refractor-Photo" src={refactorPic} alt="Code Refractor"></img>
+                  <img className="card-img img-fluid" id="code-Refractor-Photo" src={refactorPic} alt="Code Refractor"></img>
                   <div className="mask rgba-white-slight"></div>
                 </a>
               </div>
               <div className='overlay4'>
                 <div className='overlay-text'>
-                  <h4 className="card-title mt-2">Code Refracting</h4>
-                  <p className="card-text">Click the image to be taken to the first website I practiced code refractoring.</p>
+                  <p className="card-text">Click the image to be taken to the first website I practiced code refactoring.</p>
                   <a href="https://github.com/Dkallen117/code-Refractor" target="_blank" rel="noreferrer">
                     <button type="button" className="btn blue-gradient btn-lg mb-2">GitHub Respository</button>
                   </a>

@@ -49,13 +49,14 @@ function Footer() {
       <div className="mask d-flex align-items-center footer-container">
         <div className="container">
           <div className="row justify-content-center">
-
             <div className="col-12 col-md-10 col-lg-7 col-xl-6 mt-4">
               <div className="modal fade" id="modalContactForm" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel"
                 aria-hidden="true">
+
                 <form ref={form} onSubmit={sendEmail}>
                   <div className="modal-dialog" role="document">
                     <div className="modal-content">
+
                       <div className="modal-header text-center">
                         <h4 className="modal-title w-100 font-weight-bold">Contact Me</h4>
                         <button type="button" className="close" data-dismiss="modal" aria-label="Close">
@@ -78,32 +79,26 @@ function Footer() {
                           <label data-error="wrong" data-success="right" >Your email address</label>
                         </div>
 
-
-
                         <div className="md-form">
                           <i className="fas fa-pencil prefix grey-text"></i>
                           <textarea type="text" className="md-textarea form-control" name="message"
                             id="message" value={message} onChange={(e) => handleChange(e)} rows="4" required></textarea>
                           <label data-error="wrong" data-success="right" >Your message</label>
                         </div>
-
                       </div>
                       <div className="modal-footer d-flex justify-content-center">
-                        <button type="submit" value="Send" className="btn btn-unique">Send <i className="fas fa-paper-plane-o ml-1"></i></button>
+                        <button type="submit" value="Send" className="btn blue-gradient">Send <i className="fas fa-paper-plane ml-1"></i></button>
                         <ToastContainer />
                       </div>
                     </div>
                   </div>
                 </form>
               </div>
-              <div className="text-center">
+              <div className="text-center" id="contact">
                 <a className="mb-4" data-toggle="modal" data-target="#modalContactForm">
                   <i className="far fa-envelope fa-3x"></i>
                 </a>
               </div>
-
-
-
               <div className='bottom-links'>
                 <div className="d-flex justify-content-around my-3">
                   <a href="#top">
@@ -134,7 +129,6 @@ function Footer() {
         </div>
       </div>
     </footer>
-
   );
 }
 export default Footer;
