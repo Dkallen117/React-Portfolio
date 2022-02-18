@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.3bf87deb.chunk.css",
-    "main.js": "/React-Portfolio/static/js/main.6f1ead97.chunk.js",
-    "main.js.map": "/React-Portfolio/static/js/main.6f1ead97.chunk.js.map",
+    "main.css": "/React-Portfolio/static/css/main.9e1ddbfa.chunk.css",
+    "main.js": "/React-Portfolio/static/js/main.f978ffad.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.f978ffad.chunk.js.map",
     "runtime-main.js": "/React-Portfolio/static/js/runtime-main.24514994.js",
     "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.24514994.js.map",
     "static/css/2.f4c56af9.chunk.css": "/React-Portfolio/static/css/2.f4c56af9.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.ff124f57.chunk.js.map": "/React-Portfolio/static/js/2.ff124f57.chunk.js.map",
     "index.html": "/React-Portfolio/index.html",
     "static/css/2.f4c56af9.chunk.css.map": "/React-Portfolio/static/css/2.f4c56af9.chunk.css.map",
-    "static/css/main.3bf87deb.chunk.css.map": "/React-Portfolio/static/css/main.3bf87deb.chunk.css.map",
+    "static/css/main.9e1ddbfa.chunk.css.map": "/React-Portfolio/static/css/main.9e1ddbfa.chunk.css.map",
     "static/js/2.ff124f57.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.ff124f57.chunk.js.LICENSE.txt",
     "static/media/Daniels-Web-Game-Dev-Resume.0138710e.pdf": "/React-Portfolio/static/media/Daniels-Web-Game-Dev-Resume.0138710e.pdf",
     "static/media/Screenshot1.dfdcc23a.jpg": "/React-Portfolio/static/media/Screenshot1.dfdcc23a.jpg",
@@ -27,7 +27,7 @@
     "static/js/runtime-main.24514994.js",
     "static/css/2.f4c56af9.chunk.css",
     "static/js/2.ff124f57.chunk.js",
-    "static/css/main.3bf87deb.chunk.css",
-    "static/js/main.6f1ead97.chunk.js"
+    "static/css/main.9e1ddbfa.chunk.css",
+    "static/js/main.f978ffad.chunk.js"
   ]
 }
