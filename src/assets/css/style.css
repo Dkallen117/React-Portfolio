@@ -3,14 +3,14 @@
   box-sizing: border-box;
 }
 html {
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
   scroll-behavior: smooth;
 }
 body {
-  height: 100%;
+  height: auto;
   overflow-y: auto;
-  width: 100%;
+  width: auto;
   overflow-x: hidden !important;
 }
 form{
@@ -432,6 +432,9 @@ i.fa-envelope:after {
   }
   #nav-Bar {
     margin-top: 339px;
+  }
+  html, body {
+    overflow-x: hidden;
   }
 }
 /* Surface Duo */
