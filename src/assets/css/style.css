@@ -61,7 +61,7 @@ video {
   transform-style: preserve-3d;
   margin-bottom: 10px;
 }
-.flip-button::before {
+.flip-button:before {
   font-family: "Roboto", "Font Awesome 5 Free";
   content: "\f107""\00a0""\00a0""\00a0"attr(btn-after) "\00a0""\00a0""\00a0""\f107";
   position: absolute;
@@ -92,6 +92,9 @@ video {
 .card {
   width: 100%;
   height: 100%;
+  border-style: solid;
+  border-width: thick;
+  border-color: #0074d9;
 }
 .card-img-top {
   min-width: 100%;
