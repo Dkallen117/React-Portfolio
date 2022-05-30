@@ -197,7 +197,7 @@ function Portfolio() {
         {/* Book Search Card */}
         <div className="col-md-4 mb-4 my-5 filter web">
           <div className='overlay-container'>
-            <div className="card d-flex flex-column wow fadeInUp text-center">
+            <div className="card d-flex flex-column wow fadeInUp text-center draw">
               <h4 className="card-header">Book Search</h4>
               <div className="bg-image">
                 <a href="https://book-search-engine-mern-2021.herokuapp.com/" target="_blank" rel="noreferrer">
@@ -220,7 +220,7 @@ function Portfolio() {
         {/* RPG card */}
         <div className="col-md-4 mb-4 my-5 filter web">
           <div className='overlay-container'>
-            <div className="card d-flex flex-column wow fadeInUp text-center">
+            <div className="card d-flex flex-column wow fadeInUp text-center draw">
               <h4 className="card-header">RPG Database</h4>
               <div className="bg-image">
                 <a href="https://jefarth-rpg-database.herokuapp.com/" target="_blank" rel="noreferrer">
@@ -243,7 +243,7 @@ function Portfolio() {
         {/* E-commerce card */}
         <div className="col-md-4 mb-4 my-5 filter web">
           <div className='overlay-container'>
-            <div className="card d-flex flex-column wow fadeInUp text-center">
+            <div className="card d-flex flex-column wow fadeInUp text-center draw">
               <h4 className="card-header">E-Commerce Backend</h4>
               <div className="bg-image">
                 <a href="https://drive.google.com/file/d/1L170PB6NC_hPIxG2VKxrctGLzShzYpn1/view" target="_blank" rel="noreferrer">
@@ -266,7 +266,7 @@ function Portfolio() {
         {/* Snarf Card */}
         <div className="col-md-4 mb-4 my-5 filter game">
           <div className='overlay-container'>
-            <div className="card d-flex flex-column wow fadeInUp text-center" id="snarf-Card">
+            <div className="card d-flex flex-column wow fadeInUp text-center draw" id="snarf-Card">
               <h4 className="card-header">Video Game Studio Prezi Presentation</h4>
               <div className="bg-image">
                 <a href="https://prezi.com/dwii7bnwk3rz/team-everybody-loves-snarf/" target="_blank" rel="noreferrer">
@@ -289,7 +289,7 @@ function Portfolio() {
         {/* Stock Scanner Card */}
         <div className="col-md-4 mb-4 my-5 filter web">
           <div className='overlay-container'>
-            <div className="card d-flex flex-column wow fadeInUp text-center">
+            <div className="card d-flex flex-column wow fadeInUp text-center draw">
               <h4 className="card-header">Stock Scanner</h4>
               <div className="bg-image">
                 <a href="https://dkallen117.github.io/StockScanner/" target="_blank" rel="noreferrer">
@@ -312,7 +312,7 @@ function Portfolio() {
         {/* Metatron Card */}
         <div className="col-md-4 mb-4 my-5 filter game">
           <div className='overlay-container'>
-            <div className="card d-flex flex-column wow fadeInUp text-center">
+            <div className="card d-flex flex-column wow fadeInUp text-center draw">
               <h4 className="card-header">Metatron's Cube YouTube Video</h4>
               <div className="bg-image">
                 <a href='https://drive.google.com/file/d/1r_xoRh5Fk8TUapcZ_KXA4iK4wwfuUIvl/view?usp=sharing' target="_blank" rel="noreferrer">
@@ -332,7 +332,7 @@ function Portfolio() {
         {/* Weather Card */}
         <div className="col-md-4 mb-4 my-5 filter web" id="weather-Card">
           <div className='overlay-container'>
-            <div className="card d-flex flex-column wow fadeInUp text-center">
+            <div className="card d-flex flex-column wow fadeInUp text-center draw">
               <h4 className="card-header">Weather Dashboard</h4>
               <div className="bg-image">
                 <a href='https://dkallen117.github.io/weather-Dashboard/' target="_blank" rel="noreferrer">
@@ -354,7 +354,7 @@ function Portfolio() {
         {/* Code Refactor Card */}
         <div className="col-md-4 mb-4 my-5 filter web" id="code-Card">
           <div className='overlay-container'>
-            <div className="card d-flex wow fadeInUp text-center">
+            <div className="card d-flex wow fadeInUp text-center draw">
               <h4 className="card-header">Code Refactoring</h4>
               <div className="bg-image">
                 <a href='https://dkallen117.github.io/code-Refractor/' target="_blank" rel="noreferrer">

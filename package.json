@@ -4,6 +4,7 @@
   "homepage": "https://dkallen117.github.io/React-Portfolio",
   "private": true,
   "dependencies": {
+    "@babel/runtime": "^7.17.9",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -23,7 +24,7 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "NODE_ENV=test mocha -w src/test/helpers/browser.js --require @babel/register --require ignore-styles src/test/*.test.js",
+    "test": "NODE_ENV=test mocha -w src/test/helpers/browser.js --require @babel/register --require ignore-styles src/test/*.test.js --timeout 10000",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -48,6 +49,7 @@
     "@babel/core": "^7.16.0",
     "@babel/plugin-syntax-jsx": "^7.16.0",
     "@babel/plugin-transform-modules-commonjs": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.17.12",
     "@babel/preset-react": "^7.16.0",
     "@babel/register": "^7.16.0",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.7",
@@ -56,11 +58,13 @@
     "chai": "^4.3.4",
     "chai-enzyme": "^1.0.0-beta.1",
     "cheerio": "^1.0.0-rc.10",
+    "chromedriver": "^101.0.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
     "ignore-styles": "^5.0.1",
     "jsdom": "^19.0.0",
     "mocha": "^9.1.3",
+    "selenium-webdriver": "^4.1.2",
     "sinon": "^12.0.1"
   }
 }
