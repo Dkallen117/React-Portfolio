@@ -34,7 +34,7 @@ describe("Email", function () {
 
    })
 
-   it('should go to nehalist.io and check the title', async () => {
+   it('should go to my portfolio and check the title', async () => {
 
       await driver.get('https://dkallen117.github.io/React-Portfolio');
 
