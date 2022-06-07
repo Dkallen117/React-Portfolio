@@ -351,27 +351,29 @@ function Portfolio() {
         {/* Code Refactor Card */}
         <div className="col-md-4 mb-4 my-5 filter web" id="code-Card">
           <div className='overlay-container'>
-            <div className="card d-flex wow fadeInUp text-center draw">
-              <h4 className="card-header">Code Refactoring</h4>
-              <div className="bg-image">
-                <a href='https://dkallen117.github.io/code-Refractor/' target="_blank" rel="noreferrer">
-                  <img className="card-img img-fluid" id="code-Refractor-Photo" src={refactorPic} alt="Code Refractor"></img>
-                  <div className="mask rgba-white-slight"></div>
-                </a>
-              </div>
-              <div className='overlay4'>
-                <div className='overlay-text'>
-                  <p className="card-text">Click the image to be taken to the first website I practiced code refactoring.</p>
-                  <a href="https://github.com/Dkallen117/code-Refractor" target="_blank" rel="noreferrer">
-                    <button type="button" className="btn blue-gradient btn-lg mb-2">GitHub Respository</button>
+            <div className="card d-flex wow fadeInUp text-center">
+              <div className='draw'>
+                <h4 className="card-header">Code Refactoring</h4>
+                <div className="bg-image">
+                  <a href='https://dkallen117.github.io/code-Refractor/' target="_blank" rel="noreferrer">
+                    <img className="card-img img-fluid" id="code-Refractor-Photo" src={refactorPic} alt="Code Refractor"></img>
+                    <div className="mask rgba-white-slight"></div>
                   </a>
+                </div>
+                <div className='overlay4'>
+                  <div className='overlay-text'>
+                    <p className="card-text">Click the image to be taken to the first website I practiced code refactoring.</p>
+                    <a href="https://github.com/Dkallen117/code-Refractor" target="_blank" rel="noreferrer">
+                      <button type="button" className="btn blue-gradient btn-lg mb-2">GitHub Respository</button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
+        </div >
+      </div >
+    </section >
   );
 }
 export default Portfolio;
