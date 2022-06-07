@@ -3,9 +3,9 @@ import '../assets/css/style.css'
 import resumePDF from '../assets/docs/Daniels-Web-Game-Dev-Resume.pdf';
 
 export default class NavBar extends Component {
-
   render() {
     return (
+
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-0" id="nav-Bar">
         <button
           className="navbar-toggler"

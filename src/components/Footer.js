@@ -3,8 +3,11 @@ import emailjs, { init } from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../assets/css/style.css'
+
 function Footer() {
+  
   init("user_MtnRDz54CbneHj0t1h6cd");
+  
   const notify = () => toast('Message has been sent!', {
     position: "bottom-center",
     autoClose: 5000,
@@ -14,6 +17,7 @@ function Footer() {
     draggable: true,
     progress: undefined,
   });
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -105,9 +109,10 @@ function Footer() {
                     <i className="fas fa-angle-double-up fa-3x mt-3"></i>
                   </a>
                 </div>
-                <div className="link-container">
+                <div className="link-container" id="linkContainer">
                   {/* LinkedIn */}
-                  <a href="https://www.linkedin.com/in/danielkentonallen/"
+                  <a id='linkedInLink'
+                    href="https://www.linkedin.com/in/danielkentonallen/"
                     target="_blank"
                     rel="noreferrer"
                     data-mdb-toggle="tooltip"
@@ -115,7 +120,8 @@ function Footer() {
                     <i className="fab fa-linkedin fa-3x"></i>
                   </a>
                   {/* GitHub */}
-                  <a href="https://github.com/Dkallen117"
+                  <a id='githubLink'
+                    href="https://github.com/Dkallen117"
                     target="_blank"
                     rel="noreferrer"
                     data-mdb-toggle="tooltip"

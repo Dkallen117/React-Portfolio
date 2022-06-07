@@ -16,14 +16,12 @@ function Portfolio() {
 
     $(".filter-button").click(function () {
       const value = $(this).attr('data-filter');
-
       if (value === 'all') {
         $('.filter').show('1000');
       }
       else {
         $('.filter').not('.' + value).hide('3000');
         $('.filter').filter('.' + value).show('3000');
-
       }
     });
 
@@ -31,7 +29,6 @@ function Portfolio() {
       $(this).removeClass("active");
     }
     $(this).addClass("active");
-
   });
 
 

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../assets/css/style.css'
 import circuitVideo from '../assets/images/circuit-video.mp4'
 import { MDBContainer } from 'mdb-react-ui-kit';
+
 export default class Header extends Component {
   render() {
     return (

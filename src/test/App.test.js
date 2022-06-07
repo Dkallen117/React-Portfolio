@@ -8,13 +8,13 @@ import { Builder, By, Key, until } from "selenium-webdriver"
 import chrome from 'selenium-webdriver/chrome'
 import chromedriver from 'chromedriver'
 
-
 configure({ adapter: new Adapter() });
 
-describe("Email", function () {
+describe("Footer & Title", function () {
+   
    const driver = new Builder().forBrowser('chrome').build();
-   this.timeout(10000);
-   it("should have a button", () => {
+
+   it("should have two buttons", () => {
       const wrapper = shallow(<Footer />);
       expect(wrapper.find('button')).to.have.length(2);
    });
@@ -43,8 +43,25 @@ describe("Email", function () {
 
    });
 
-   after(async () => driver.quit());
+   it('should check social icon links', async () => {
 
+      driver.wait(until.elementLocated(By.id('linkedInLink'))).then(function () {
+
+         let LIL = driver.findElement(By.id('linkedInLink')).getAttribute("href");
+         expect(LIL).to.equal('https://www.linkedin.com/in/danielkentonallen/');
+
+      });
+
+      driver.wait(until.elementLocated(By.id('githubLink'))).then(function () {
+
+         let GHL = driver.findElement(By.id('githubLink')).getAttribute("href");
+         expect(GHL).to.equal('https://github.com/Dkallen117');
+
+      });
+
+   });
+
+   after(async () => driver.quit());
 
    chai.use(chaiEnzyme());
 });
